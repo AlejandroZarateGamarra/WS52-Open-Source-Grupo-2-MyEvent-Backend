@@ -11,7 +11,8 @@ import { CheckoutComponent } from './checkout/checkout.component';
 import { LatestProductsComponent } from './latest-products/latest-products.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CarouselModule } from 'ngx-owl-carousel-o';
-
+import { HttpClientModule } from '@angular/common/http';
+import {HttpClient} from "@angular/common/http";
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -27,6 +28,7 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
     ProductsComponent,
     CartPageComponent,
     HomeComponent,
+    HttpClientModule,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
