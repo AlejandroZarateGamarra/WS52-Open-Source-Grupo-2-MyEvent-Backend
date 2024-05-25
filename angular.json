@@ -24,12 +24,13 @@
               "src/assets"
             ],
             "styles": [
+              "@angular/material/prebuilt-themes/indigo-pink.css",
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "node_modules/slick-carousel/slick/slick.scss",
               "node_modules/slick-carousel/slick/slick-theme.scss",
               "node_modules/font-awesome/css/font-awesome.css",
-           
-              "src/styles.css",   "src/assets/css/responsive.css",
+              "src/styles.css",
+              "src/assets/css/responsive.css",
               "node_modules/@fontsource/roboto-condensed/index.css",
               "node_modules/@fontsource/titillium-web/index.css",
               "node_modules/@fontsource/raleway/100.css"
@@ -101,6 +102,7 @@
               "src/assets"
             ],
             "styles": [
+              "@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -108,5 +110,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "04768ab1-9aae-4bb0-847a-156dcee381dd"
   }
 }

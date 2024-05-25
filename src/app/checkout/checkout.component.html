@@ -477,22 +477,9 @@
                       </select>
                     </p>
 
-                    <p
-                      id="billing_first_name_field"
-                      class="form-row form-row-first validate-required"
-                    >
-                      <label class="" for="billing_first_name"
-                        >First Name
-                        <abbr title="required" class="required">*</abbr>
-                      </label>
-                      <input
-                        type="text"
-                        value=""
-                        placeholder=""
-                        id="billing_first_name"
-                        name="billing_first_name"
-                        class="input-text"
-                      />
+                    <p id="billing_first_name_field" class="form-row form-row-first validate-required">
+                      <label class="" for="billing_first_name">First Name <abbr title="required" class="required">*</abbr></label>
+                      <input type="text" value="" placeholder="" id="billing_first_name" name="billing_first_name" class="input-text" [(ngModel)]="bill.billingDetails.firstName" />
                     </p>
 
                     <p
@@ -585,7 +572,7 @@
                       class="form-row form-row-first address-field validate-state"
                       data-o_class="form-row form-row-first address-field validate-state"
                     >
-                      <label class="" for="billing_state">County</label>
+                      <label class="" for="billing_state">Country</label>
                       <input
                         type="text"
                         id="billing_state"
@@ -1281,6 +1268,7 @@
                       id="place_order"
                       name="woocommerce_checkout_place_order"
                       class="button alt"
+                      (click)="generateBill()"
                     />
                   </div>
 
