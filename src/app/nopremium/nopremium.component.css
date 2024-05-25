@@ -1,0 +1,99 @@
+/* Estilos básicos para el panel */
+.panel {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  height: 80%;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  font-family: Arial, sans-serif;
+  overflow: auto;
+  border-radius: 15px;
+  z-index: 3;
+}
+
+.header{
+  z-index: 1;
+}
+.panel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 20px;
+}
+
+.panel-title {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.close-btn {
+  cursor: pointer;
+  color: #888;
+  font-size: 30px;
+}
+
+.offer {
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.offer h1 {
+  font-size: 40px;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.offer p {
+  font-size: 16px;
+}
+
+.buy-btn {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  align-self: flex-start;
+}
+
+.panel-columns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.column-left,
+.column-right {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.column-left {
+  border-right: 1px solid #ccc;
+}
+
+li {
+  padding-top: 20px;
+}
+
+.buy-btn{
+  width: 200px;
+  margin-left: 200px;
+}
+
+
+.footer {
+  z-index: 1;
+}

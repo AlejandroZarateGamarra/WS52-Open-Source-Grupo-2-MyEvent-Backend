@@ -1,0 +1,48 @@
+<body>
+
+<div class="panel">
+  <div class="panel-header">
+    <div class="panel-title">Ofertas</div>
+    <div class="close-btn" (click)="closePanel()">X</div>
+  </div>
+
+  <!-- Contenedor para las columnas -->
+  <div class="panel-columns">
+    <!-- Columna Izquierda -->
+    <div class="column-left">
+      <div class="offer">
+        <h1>MyEventPro - Nivel 1</h1>
+        <ul>
+          <li>Entrar en la cola 1h antes que el resto</li>
+          <li>Poder comprar 10 entradas</li>
+          <li>No hacer cola en el evento</li>
+          <li>1 Bebida gratis por entrada (agua o gaseosa)</li>
+        </ul>
+
+      </div>
+      <button class="buy-btn" (click)="level1()">Precio: s/49.90 Comprar</button>
+    </div>
+
+
+    <!-- Columna Derecha -->
+    <div class="column-right">
+      <div class="offer">
+        <h1>MegaEvent - Nivel 2</h1>
+        <ul>
+          <li>Entrar en la cola 3h antes que el resto</li>
+          <li>Poder comprar 15 entradas</li>
+          <li>No pagar adicional al transferir entrada</li>
+          <li>No hacer cola en el evento</li>
+          <li>Fotos del evento a tu correo</li>
+          <li>1 Bebida gratis por entrada (agua o gaseosa)</li>
+          <li>Regalo especial del evento (merchandising) entregado en el lugar.</li>
+          <h2></h2>
+        </ul>
+
+      </div>
+      <button class="buy-btn" (click)="level2()">Precio: s/79.90 Comprar</button>
+    </div>
+
+  </div>
+</div>
+</body>
