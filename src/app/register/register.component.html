@@ -1,0 +1,149 @@
+<body>
+<div class="container">
+  <div class="form-box">
+    <h2>Registrate</h2>
+
+    <div class="form-wrapper">
+
+      <div class="form-container">
+        <mat-label for="nombreInput">Nombre:</mat-label>
+        <mat-form-field class="example-form-field">
+          <input matInput
+                 [type] = "mostrarNombre ? 'text' : 'text'"
+                 id="nombreInput"
+                 [(ngModel)]="nombre"
+                 placeholder="Ingrese su nombre"
+                 pattern="[a-zA-Z ]*"
+                 required>
+          <button matSuffix mat-icon-button aria-label="Clear" (click)="nombre=''">
+            <mat-icon>close</mat-icon>
+          </button>
+        </mat-form-field>
+      </div>
+
+
+      <div class="form-container">
+        <mat-label for="apellidosInput">Apellidos:</mat-label>
+        <mat-form-field class="example-form-field">
+          <input matInput
+                 [type] = "mostrarApellido ? 'text' : 'text'"
+                 id="apellidosInput"
+                 [(ngModel)]="apellidos"
+                 placeholder="Ingrese su apellido"
+                 pattern="[a-zA-Z ]*"
+                 required>
+          <button matSuffix mat-icon-button aria-label="Clear" (click)="apellidos=''">
+            <mat-icon>close</mat-icon>
+          </button>
+        </mat-form-field>
+      </div>
+
+
+      <div class="form-container">
+        <mat-label for="correoInput">Correo Electrónico:</mat-label>
+        <mat-form-field class="example-form-field">
+          <input matInput
+                 [type]="mostrarEmail ? 'text' : 'email'"
+                 id="correoInput"
+                 [(ngModel)]="correo"
+                 placeholder="Ingrese su correo electrónico"
+                 pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                 required>
+          <button matSuffix mat-icon-button aria-label="Clear" (click)="correo=''">
+            <mat-icon>close</mat-icon>
+          </button>
+        </mat-form-field>
+      </div>
+
+
+      <div class="form-container">
+        <mat-label for="telefonoInput">Teléfono:</mat-label>
+        <mat-form-field class="example-form-field">
+          <input matInput
+                 [type]="mostrarTelefono ? 'text' : 'tel'"
+                 id="telefonoInput"
+                 [(ngModel)]="telefono"
+                 placeholder="Ingrese su teléfono"
+                 pattern="[0-9]*"
+                 required>
+          <button matSuffix mat-icon-button aria-label="Clear" (click)="telefono=''">
+            <mat-icon>close</mat-icon>
+          </button>
+        </mat-form-field>
+      </div>
+
+      <div class="form-container">
+        <mat-label for="dniInput">Dni:</mat-label>
+        <mat-form-field class="example-form-field">
+          <input matInput
+                 [type]="mostrarDni ? 'text' : 'text'"
+                 id="direccionInput"
+                 [(ngModel)]="dni"
+                 placeholder="Ingrese su dirección"
+                 pattern="[0-9]*"
+                 required>
+          <button matSuffix mat-icon-button aria-label="Clear" (click)="dni=''">
+            <mat-icon>close</mat-icon>
+          </button>
+        </mat-form-field>
+      </div>
+
+
+      <div class="form-container">
+        <mat-label for="contrasenaInput">Tipo de cuenta:</mat-label>
+        <mat-form-field>
+          <mat-select [(value)]="accountType">
+            <mat-option value="one">Comprador</mat-option>
+            <mat-option value="two">Organizador</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+
+      <div class="form-container">
+        <mat-label for="contrasenaInput">Contraseña:</mat-label>
+        <mat-form-field class="example-form-field">
+          <input matInput
+                 [type]="mostrarContrasena ? 'text' : 'password'"
+                 id="contrasenaInput"
+                 [(ngModel)]="contrasena"
+                 placeholder="Ingrese su contraseña"
+                 minlength="6"
+                 required>
+          <button matSuffix mat-icon-button aria-label="Clear" (click)="contrasena=''">
+            <mat-icon>close</mat-icon>
+          </button>
+        </mat-form-field>
+      </div>
+
+      <div class="form-container">
+        <mat-label for="repContrasenaInput">Repetir Contraseña:</mat-label>
+        <mat-form-field class="example-form-field">
+          <input matInput
+                 [type]="mostrarContrasena ? 'text' : 'password'"
+                 id="repContrasenaInput"
+                 [(ngModel)]="Repcontrasena"
+                 placeholder="Repita su contraseña">
+          <button matSuffix mat-icon-button aria-label="Clear" (click)="Repcontrasena=''">
+            <mat-icon>close</mat-icon>
+          </button>
+        </mat-form-field>
+      </div>
+      <mat-checkbox [(ngModel)]="mostrarContrasena">
+        Mostrar contraseña
+      </mat-checkbox>
+
+      <mat-checkbox [(ngModel)]="savepassword">
+        Recordarme
+      </mat-checkbox>
+
+      <div class="button-container">
+        <button mat-flat-button [disabled]="!todosLosCamposCompletos() || !datosValidos()|| !passwordsMatch()" (click)="redirigirAInicioSesion()">Crear cuenta</button></div>
+
+
+    </div>
+  </div>
+</div>
+
+
+</body>
+
