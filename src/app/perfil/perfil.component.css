@@ -1,0 +1,90 @@
+body {
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 75vh;
+  background-color: #f4f4f4;
+  margin: 0;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.left-card, .right-card {
+  padding: 20px;
+  width: 50%;
+}
+
+.left-card {
+  background-color: #f9f9f9;
+  border-right: 1px solid #eeeeee;
+  text-align: center;
+}
+
+.right-card {
+  background-color: #ffffff;
+}
+
+.user-info, .account-info {
+  text-align: left;
+  margin-top: 20px;
+}
+
+.text, .created, .email, .password {
+  margin: 10px 0;
+  color: #333333;
+}
+
+.text span, .created span, .email span, .password span {
+  font-weight: bold;
+  color: #cc1515;
+}
+
+.boton {
+  background-color: rgba(204, 21, 21, 0.99);
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.boton:hover {
+  background-color: #b31515;
+}
+
+.boton1{
+  background-color: rgba(204, 21, 21, 0.99);
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 400px;
+  transition: background-color 0.3s ease;
+}
+
+
+
+.profile-pic {
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid rgba(204, 21, 21, 0.99);
+  width: 150px;
+  height: 150px;
+}
