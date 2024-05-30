@@ -109,118 +109,28 @@
       "photo": "../../assets/img/events/event12.png"
     }
   ],
+  "credit_cards": [
+    {
+      "id": 1,
+      "owner": "Alessandro",
+      "number": "1234 5678 1234 5678",
+      "expiration": "12/2024",
+      "cvv": "123",
+      "funds": "1000"
+    },
+    {
+      "id": 2,
+      "owner": "Michael",
+      "number": "1234 5678 1234 5678",
+      "expiration": "12/2024",
+      "cvv": "123",
+      "funds": "5000"
+    }
+  ],
   "bills": [
     {
       "billingDetails": {
         "firstName": null,
-        "lastName": null,
-        "company": null,
-        "address1": null,
-        "address2": null,
-        "city": null,
-        "state": null,
-        "postcode": null,
-        "email": null,
-        "phone": null
-      },
-      "shippingDetails": {
-        "firstName": null,
-        "lastName": null,
-        "company": null,
-        "address1": null,
-        "address2": null,
-        "city": null,
-        "state": null,
-        "postcode": null
-      },
-      "orderItems": [
-        {
-          "productId": 1,
-          "productName": "Ferxxocalipsis",
-          "quantity": 2,
-          "price": 960
-        }
-      ],
-      "totalAmount": 960,
-      "id": 1
-    },
-    {
-      "billingDetails": {
-        "firstName": null,
-        "lastName": null,
-        "company": null,
-        "address1": null,
-        "address2": null,
-        "city": null,
-        "state": null,
-        "postcode": null,
-        "email": null,
-        "phone": null
-      },
-      "shippingDetails": {
-        "firstName": null,
-        "lastName": null,
-        "company": null,
-        "address1": null,
-        "address2": null,
-        "city": null,
-        "state": null,
-        "postcode": null
-      },
-      "orderItems": [
-        {
-          "productId": 3,
-          "productName": "Miel San Marcos - Generaciones 24",
-          "quantity": 1,
-          "price": 201
-        },
-        {
-          "productId": 6,
-          "productName": "Cosquín Rock Perú",
-          "quantity": 2,
-          "price": 658
-        }
-      ],
-      "totalAmount": 859,
-      "id": 2
-    },
-    {
-      "billingDetails": {
-        "firstName": "Alessandro",
-        "lastName": null,
-        "company": null,
-        "address1": null,
-        "address2": null,
-        "city": null,
-        "state": null,
-        "postcode": null,
-        "email": null,
-        "phone": null
-      },
-      "shippingDetails": {
-        "firstName": null,
-        "lastName": null,
-        "company": null,
-        "address1": null,
-        "address2": null,
-        "city": null,
-        "state": null,
-        "postcode": null
-      },
-      "orderItems": [
-        {
-          "productId": 5,
-          "productName": "Superclub Pres. Amelie Lens",
-          "quantity": 2,
-          "price": 180
-        }
-      ],
-      "totalAmount": 180,
-      "id": 3
-    },
-    {
-      "billingDetails": {
-        "firstName": "Alessandro",
         "lastName": null,
         "company": null,
         "address1": null,
@@ -249,13 +159,115 @@
           "price": 97.5
         },
         {
-          "productId": 3,
-          "productName": "Miel San Marcos - Generaciones 24",
+          "productId": 7,
+          "productName": "Morat: Los estadios. Antes de que amanezca",
           "quantity": 1,
-          "price": 201
+          "price": 390
         }
       ],
-      "totalAmount": 298.5,
+      "totalAmount": 487.5,
+      "id": 1
+    },
+    {
+      "billingDetails": {
+        "firstName": "Alessandro",
+        "lastName": null,
+        "company": null,
+        "address1": null,
+        "address2": null,
+        "city": null,
+        "state": null,
+        "postcode": null,
+        "email": null,
+        "phone": null
+      },
+      "shippingDetails": {
+        "firstName": null,
+        "lastName": null,
+        "company": null,
+        "address1": null,
+        "address2": null,
+        "city": null,
+        "state": null,
+        "postcode": null
+      },
+      "orderItems": [
+        {
+          "productId": 1,
+          "productName": "Ferxxocalipsis",
+          "quantity": 3,
+          "price": 1440
+        }
+      ],
+      "totalAmount": 1440,
+      "id": 2
+    },
+    {
+      "billingDetails": {
+        "firstName": "Alessandro",
+        "lastName": "Bernardo Eusebio",
+        "company": "upc",
+        "address1": "jr pedro benvenuto 242 san miguel",
+        "address2": null,
+        "city": "Lima",
+        "state": "Lima",
+        "postcode": "02002",
+        "email": "abc@hotmail.com",
+        "phone": "912770406"
+      },
+      "shippingDetails": {
+        "firstName": null,
+        "lastName": null,
+        "company": null,
+        "address1": null,
+        "address2": null,
+        "city": null,
+        "state": null,
+        "postcode": null
+      },
+      "orderItems": [
+        {
+          "productId": 2,
+          "productName": "Festival Internacional del Vinilo Vol.6",
+          "quantity": 2,
+          "price": 195
+        }
+      ],
+      "totalAmount": 195,
+      "id": 3
+    },
+    {
+      "billingDetails": {
+        "firstName": "Alessandro",
+        "lastName": "Bernardo Eusebio",
+        "company": "upc",
+        "address1": "jr pedro benvenuto 242 san miguel",
+        "address2": null,
+        "city": "Lima",
+        "state": "Lima",
+        "postcode": "02002",
+        "email": null,
+        "phone": "912770406"
+      },
+      "shippingDetails": {
+        "firstName": null,
+        "lastName": null,
+        "company": null,
+        "address1": null,
+        "address2": null,
+        "city": null,
+        "state": null,
+        "postcode": null
+      },
+      "orderItems": [
+        {
+          "productId": 2,
+          "productName": "Festival Internacional del Vinilo Vol.6",
+          "quantity": 1,
+          "price": 97.5
+        }
+      ],
+      "totalAmount": 97.5,
       "id": 4
     }
   ]

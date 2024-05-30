@@ -4,6 +4,7 @@ import { ProductsComponent } from './products/products.component';
 import { CartPageComponent } from './cart-page/cart-page.component';
 import { ProductdetailsComponent } from './productdetails/productdetails.component';
 import { CheckoutComponent } from './checkout/checkout.component';
+import { ThePaymentViewComponent} from "./the-payment-view/the-payment-view.component";
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -11,5 +12,5 @@ export const routes: Routes = [
   { path: 'product/:id', component: ProductdetailsComponent },
   { path: 'cart', component: CartPageComponent },
   { path: 'checkout', component: CheckoutComponent },
-  
+  { path: 'payment', component: ThePaymentViewComponent },
 ];

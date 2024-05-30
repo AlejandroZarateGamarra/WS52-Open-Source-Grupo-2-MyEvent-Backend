@@ -497,6 +497,7 @@
                         id="billing_last_name"
                         name="billing_last_name"
                         class="input-text"
+                        [(ngModel)]="bill.billingDetails.lastName"
                       />
                     </p>
                     <div class="clear"></div>
@@ -513,6 +514,8 @@
                         id="billing_company"
                         name="billing_company"
                         class="input-text"
+                        [(ngModel)]="bill.billingDetails.company"
+
                       />
                     </p>
 
@@ -531,6 +534,8 @@
                         id="billing_address_1"
                         name="billing_address_1"
                         class="input-text"
+                        [(ngModel)]="bill.billingDetails.address1"
+
                       />
                     </p>
 
@@ -545,6 +550,8 @@
                         id="billing_address_2"
                         name="billing_address_2"
                         class="input-text"
+                        [(ngModel)]="bill.billingDetails.address2"
+
                       />
                     </p>
 
@@ -564,6 +571,8 @@
                         id="billing_city"
                         name="billing_city"
                         class="input-text"
+                        [(ngModel)]="bill.billingDetails.city"
+
                       />
                     </p>
 
@@ -580,6 +589,8 @@
                         placeholder="State / County"
                         value=""
                         class="input-text"
+                        [(ngModel)]="bill.billingDetails.state"
+
                       />
                     </p>
                     <p
@@ -598,6 +609,8 @@
                         id="billing_postcode"
                         name="billing_postcode"
                         class="input-text"
+                        [(ngModel)]="bill.billingDetails.postcode"
+
                       />
                     </p>
 
@@ -618,6 +631,8 @@
                         id="billing_email"
                         name="billing_email"
                         class="input-text"
+                        [(ngModel)]="bill.billingDetails.email"
+
                       />
                     </p>
 
@@ -635,6 +650,8 @@
                         id="billing_phone"
                         name="billing_phone"
                         class="input-text"
+                        [(ngModel)]="bill.billingDetails.phone"
+
                       />
                     </p>
                     <div class="clear"></div>
@@ -1268,7 +1285,8 @@
                       id="place_order"
                       name="woocommerce_checkout_place_order"
                       class="button alt"
-                      (click)="generateBill()"
+                      routerLink="/payment"
+                      (click)="transferBillData()"
                     />
                   </div>
 
