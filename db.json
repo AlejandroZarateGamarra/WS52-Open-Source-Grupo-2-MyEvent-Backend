@@ -115,68 +115,80 @@
       "price": 480.00,
       "title": "Ferxxocalipsis",
       "date": "2024-05-23",
-      "address": "Jockey Club del Perú"
+      "address": "Jockey Club del Perú",
+      "type": "Concierto"
     },
     {
       "id": 2,
       "price": 97.50,
       "title": "Festival Internacional del Vinilo Vol.6",
       "date": "2024-05-24",
-      "address": "Centro de Convenciones Festiva"
+      "address": "Centro de Convenciones Festiva",
+      "type": "Festival"
     },
     {
       "id": 3,
       "price": 201.00,
       "title": "Miel San Marcos - Generaciones 24",
       "date": "2024-05-25",
-      "address": "Estadio Nacional"
+      "address": "Estadio Nacional",
+      "type": "Concierto"
     },
     {
       "id": 4,
       "price": 56.00,
       "title": "Orbital Club Pres. Ben Sterling",
       "date": "2024-05-23",
-      "address": "Orbital Club"
+      "address": "Orbital Club",
+      "type": "Concierto"
     },
     {
       "id": 5,
       "price": 90.00,
       "title": "Superclub Pres. Amelie Lens",
       "date": "2024-05-24",
-      "address": "Superclub"
+      "address": "Superclub",
+      "type": "Concierto"
     },
     {
       "id": 6,
       "price": 329.00,
       "title": "Cosquín Rock Perú",
       "date": "2024-05-25",
-      "address": "Estadio Nacional"
+      "address": "Estadio Nacional",
+      "type": "Festival"
     },
     {
       "id": 7,
       "price": 390.00,
       "title": "Morat: Los estadios. Antes de que amanezca",
       "date": "2024-05-23",
-      "address": "Jockey Club del Perú"
+      "address": "Jockey Club del Perú",
+      "type": "Concierto"
     },
     {
       "id": 8,
       "price": 236.00,
       "title": "Festival Andino Latinoamericano IV Edición",
       "date": "2024-05-24",
-      "address": "Anfiteatro del Parque de la Exposición"
+      "address": "Anfiteatro del Parque de la Exposición",
+      "type": "Festival"
     },
     {
       "id": 9,
       "price": 34.00,
       "title": "Alvaro Rod en Ayacucho",
       "date": "2024-05-25",
-      "address": "Estadio Nacional"
+      "address": "Estadio Nacional",
+      "type": "Concierto"
     },
     {
       "id": 10,
       "price": 236.00,
-      "title": "Marcos Llunas - Sinfonia"
+      "title": "Marcos Llunas - Sinfonia",
+      "date": "2024-05-23",
+      "address": "Teatro Municipal de Lima",
+      "type": "Concierto"
     }
   ]
 }

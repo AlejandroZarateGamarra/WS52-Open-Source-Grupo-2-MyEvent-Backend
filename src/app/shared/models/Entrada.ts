@@ -4,6 +4,7 @@ export class Entrada {
   title: string;
   date: string;
   address: string;
+  type: string;
 
   constructor() {
     this.id = 0;
@@ -11,5 +12,6 @@ export class Entrada {
     this.title = "";
     this.date = "";
     this.address = "";
+    this.type = "";
   }
 }

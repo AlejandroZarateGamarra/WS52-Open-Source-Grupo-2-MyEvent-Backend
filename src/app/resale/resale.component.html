@@ -10,7 +10,7 @@
       <p class="entrada-precio">{{ entrada.price }}</p>
     </mat-card-content>
     <mat-card-actions class="entrada-acciones">
-      <button mat-button class="btn-ver-mas">Ver más</button>
+      <button mat-button class="btn-ver-mas" (click)="openDetails(entrada)">Ver más</button>
       <button mat-button class="btn-revender">Revender</button>
     </mat-card-actions>
   </mat-card>

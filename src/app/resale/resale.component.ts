@@ -4,6 +4,8 @@ import { Entrada } from "../shared/models/Entrada";
 import { EntradaService } from "../services/entrada/entrada.service";
 import { MatButtonModule } from "@angular/material/button";
 import { NgForOf } from "@angular/common";
+import {EntradaDetailsComponent} from "../entrada-details/entrada-details.component";
+import {MatDialog} from "@angular/material/dialog";
 
 @Component({
   selector: 'app-resale',
@@ -19,7 +21,7 @@ import { NgForOf } from "@angular/common";
 export class ResaleComponent implements OnInit {
   entradas: Entrada[] = [];
 
-  constructor(private entradaService: EntradaService) { }
+  constructor(private entradaService: EntradaService, private dialog: MatDialog) { }
 
   ngOnInit() {
     this.getEntradas();
@@ -33,5 +35,11 @@ export class ResaleComponent implements OnInit {
 
   trackByEntradaId(index: number, entrada: Entrada): number {
     return entrada.id;
+  }
+
+  openDetails(entrada: Entrada) {
+    this.dialog.open(EntradaDetailsComponent, {
+      data: entrada
+    });
   }
 }
