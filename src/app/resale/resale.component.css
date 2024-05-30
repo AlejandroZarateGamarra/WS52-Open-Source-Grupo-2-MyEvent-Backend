@@ -1,0 +1,60 @@
+/* Contenedor principal */
+.entradas-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* Título principal */
+.entradas-titulo {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #3f51b5;
+}
+
+/* Estilos de la tarjeta de entrada */
+.entrada-card {
+  width: 80%;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.entrada-header {
+  background-color: #f5f5f5;
+  padding: 10px 16px;
+  border-bottom: 1px solid #ddd;
+}
+
+.entrada-titulo {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.entrada-contenido {
+  padding: 16px;
+  background-color: #fafafa;
+}
+
+.entrada-precio {
+  font-size: 1.2rem;
+  color: #4caf50;
+}
+
+.entrada-acciones {
+  padding: 8px 16px;
+  display: flex;
+  justify-content: flex-end;
+  background-color: #f5f5f5;
+  border-top: 1px solid #ddd;
+}
+
+.btn-ver-mas {
+  margin-right: 10px;
+  color: #3f51b5;
+}
+
+.btn-revender {
+  color: #f44336;
+}

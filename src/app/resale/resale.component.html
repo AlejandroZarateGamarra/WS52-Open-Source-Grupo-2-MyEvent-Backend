@@ -1,17 +1,17 @@
-<div>
+<div class="entradas-container">
   <div>
-    <h1>Mis entradas</h1>
+    <h1 class="entradas-titulo">Mis entradas</h1>
   </div>
-  <mat-card *ngFor="let entrada of entradas; trackBy: trackByEntradaId">
-    <mat-card-header>
-      <mat-card-title>{{ entrada.title }}</mat-card-title>
+  <mat-card class="entrada-card" *ngFor="let entrada of entradas; trackBy: trackByEntradaId">
+    <mat-card-header class="entrada-header">
+      <mat-card-title class="entrada-titulo">{{ entrada.title }}</mat-card-title>
     </mat-card-header>
-    <mat-card-content>
-      <p>{{ entrada.price }}</p>
+    <mat-card-content class="entrada-contenido">
+      <p class="entrada-precio">{{ entrada.price }}</p>
     </mat-card-content>
-    <mat-card-actions>
-      <button mat-button>Ver más</button>
-      <button mat-button>Revender</button>
+    <mat-card-actions class="entrada-acciones">
+      <button mat-button class="btn-ver-mas">Ver más</button>
+      <button mat-button class="btn-revender">Revender</button>
     </mat-card-actions>
   </mat-card>
 </div>
