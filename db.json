@@ -116,7 +116,8 @@
       "title": "Ferxxocalipsis",
       "date": "2024-05-23",
       "address": "Jockey Club del Perú",
-      "type": "Concierto"
+      "type": "Concierto",
+      "resold": false
     },
     {
       "id": 2,
@@ -124,7 +125,8 @@
       "title": "Festival Internacional del Vinilo Vol.6",
       "date": "2024-05-24",
       "address": "Centro de Convenciones Festiva",
-      "type": "Festival"
+      "type": "Festival",
+      "resold": false
     },
     {
       "id": 3,
@@ -132,7 +134,8 @@
       "title": "Miel San Marcos - Generaciones 24",
       "date": "2024-05-25",
       "address": "Estadio Nacional",
-      "type": "Concierto"
+      "type": "Concierto",
+      "resold": false
     },
     {
       "id": 4,
@@ -140,7 +143,8 @@
       "title": "Orbital Club Pres. Ben Sterling",
       "date": "2024-05-23",
       "address": "Orbital Club",
-      "type": "Concierto"
+      "type": "Concierto",
+      "resold": false
     },
     {
       "id": 5,
@@ -148,7 +152,8 @@
       "title": "Superclub Pres. Amelie Lens",
       "date": "2024-05-24",
       "address": "Superclub",
-      "type": "Concierto"
+      "type": "Concierto",
+      "resold": false
     },
     {
       "id": 6,
@@ -156,7 +161,8 @@
       "title": "Cosquín Rock Perú",
       "date": "2024-05-25",
       "address": "Estadio Nacional",
-      "type": "Festival"
+      "type": "Festival",
+      "resold": false
     },
     {
       "id": 7,
@@ -164,7 +170,8 @@
       "title": "Morat: Los estadios. Antes de que amanezca",
       "date": "2024-05-23",
       "address": "Jockey Club del Perú",
-      "type": "Concierto"
+      "type": "Concierto",
+      "resold": false
     },
     {
       "id": 8,
@@ -172,7 +179,8 @@
       "title": "Festival Andino Latinoamericano IV Edición",
       "date": "2024-05-24",
       "address": "Anfiteatro del Parque de la Exposición",
-      "type": "Festival"
+      "type": "Festival",
+      "resold": false
     },
     {
       "id": 9,
@@ -180,7 +188,8 @@
       "title": "Alvaro Rod en Ayacucho",
       "date": "2024-05-25",
       "address": "Estadio Nacional",
-      "type": "Concierto"
+      "type": "Concierto",
+      "resold": false
     },
     {
       "id": 10,
@@ -188,7 +197,8 @@
       "title": "Marcos Llunas - Sinfonia",
       "date": "2024-05-23",
       "address": "Teatro Municipal de Lima",
-      "type": "Concierto"
+      "type": "Concierto",
+      "resold": false
     }
   ]
 }

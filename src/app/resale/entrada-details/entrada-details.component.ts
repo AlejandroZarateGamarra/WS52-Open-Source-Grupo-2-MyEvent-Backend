@@ -1,7 +1,7 @@
 import {Component, Inject} from '@angular/core';
 import {MAT_DIALOG_DATA, MatDialogRef} from "@angular/material/dialog";
 import {MatButtonModule} from "@angular/material/button";
-import {Entrada} from "../shared/models/Entrada";
+import {Entrada} from "../../shared/models/Entrada";
 
 @Component({
   selector: 'app-entrada-details',

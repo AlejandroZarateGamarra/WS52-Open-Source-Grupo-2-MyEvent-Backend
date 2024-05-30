@@ -4,9 +4,10 @@ import { Entrada } from "../shared/models/Entrada";
 import { EntradaService } from "../services/entrada/entrada.service";
 import { MatButtonModule } from "@angular/material/button";
 import { NgForOf } from "@angular/common";
-import {EntradaDetailsComponent} from "../entrada-details/entrada-details.component";
+import {EntradaDetailsComponent} from "./entrada-details/entrada-details.component";
 import {MatDialog} from "@angular/material/dialog";
-import {TermsComponent} from "../terms/terms.component";
+import {TermsComponent} from "./terms/terms.component";
+import {SuccessComponent} from "./success/success.component";
 
 @Component({
   selector: 'app-resale',
@@ -29,8 +30,8 @@ export class ResaleComponent implements OnInit {
   }
 
   getEntradas() {
-    this.entradaService.getEntradas().subscribe((entradas) => {
-      this.entradas = entradas;
+    this.entradaService.getEntradas().subscribe(data => {
+      this.entradas = data.filter(entrada => !entrada.resold);
     });
   }
 
@@ -44,13 +45,23 @@ export class ResaleComponent implements OnInit {
     });
   }
 
-  openTerms(): void {
-    const dialogRef = this.dialog.open(TermsComponent);
+  openTerms(entrada: Entrada): void {
+    const dialogRef = this.dialog.open(TermsComponent, {
+      data: entrada
+    });
 
     dialogRef.afterClosed().subscribe(result => {
-      if (result) {
-        // Lógica después de aceptar los términos
-        console.log('Términos aceptados');
+      if (result && result.resold) {
+        // Si la entrada ha sido revendida, actualizar la lista de entradas
+        this.entradas = this.entradas.filter(e => e.id !== result.id);
+
+        // Abrir el diálogo de éxito
+        const successRef = this.dialog.open(SuccessComponent);
+
+        successRef.afterClosed().subscribe(() => {
+          // Después de cerrar el diálogo de éxito, recargar la lista
+          this.getEntradas();
+        });
       }
     });
   }
