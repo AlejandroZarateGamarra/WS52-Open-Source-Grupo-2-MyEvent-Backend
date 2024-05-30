@@ -6,6 +6,7 @@ import { MatButtonModule } from "@angular/material/button";
 import { NgForOf } from "@angular/common";
 import {EntradaDetailsComponent} from "../entrada-details/entrada-details.component";
 import {MatDialog} from "@angular/material/dialog";
+import {TermsComponent} from "../terms/terms.component";
 
 @Component({
   selector: 'app-resale',
@@ -40,6 +41,17 @@ export class ResaleComponent implements OnInit {
   openDetails(entrada: Entrada) {
     this.dialog.open(EntradaDetailsComponent, {
       data: entrada
+    });
+  }
+
+  openTerms(): void {
+    const dialogRef = this.dialog.open(TermsComponent);
+
+    dialogRef.afterClosed().subscribe(result => {
+      if (result) {
+        // Lógica después de aceptar los términos
+        console.log('Términos aceptados');
+      }
     });
   }
 }
