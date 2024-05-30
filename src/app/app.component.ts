@@ -11,6 +11,7 @@ import { CheckoutComponent } from './checkout/checkout.component';
 import { LatestProductsComponent } from './latest-products/latest-products.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CarouselModule } from 'ngx-owl-carousel-o';
+import { ResaleComponent } from "./resale/resale.component";
 
 @Component({
   selector: 'app-root',
@@ -27,6 +28,7 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
     ProductsComponent,
     CartPageComponent,
     HomeComponent,
+    ResaleComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',

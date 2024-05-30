@@ -1,0 +1,17 @@
+<div>
+  <div>
+    <h1>Mis entradas</h1>
+  </div>
+  <mat-card *ngFor="let entrada of entradas; trackBy: trackByEntradaId">
+    <mat-card-header>
+      <mat-card-title>{{ entrada.title }}</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <p>{{ entrada.price }}</p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button>Ver más</button>
+      <button mat-button>Revender</button>
+    </mat-card-actions>
+  </mat-card>
+</div>
