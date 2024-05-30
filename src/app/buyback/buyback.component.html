@@ -1,0 +1,16 @@
+<div class="Recompra-container">
+  <div>
+    <h1 class="Recompra-titulo">Entradas en reventa</h1>
+  </div>
+  <mat-card class="entrada-card" *ngFor="let entrada of entradas; trackBy: trackByEntradaId">
+    <mat-card-header class="entrada-header">
+      <mat-card-title class="entrada-titulo">{{ entrada.title }}</mat-card-title>
+    </mat-card-header>
+    <mat-card-content class="entrada-contenido">
+      <p class="entrada-precio">{{ entrada.price }}</p>
+    </mat-card-content>
+    <mat-card-actions class="entrada-acciones">
+      <button mat-button class="btn-ver-mas" (click)="openDetails(entrada)">Ver más</button>
+      <button mat-button class="btn-comprar">Comprar</button>
+    </mat-card-actions>
+  </mat-card>div>
