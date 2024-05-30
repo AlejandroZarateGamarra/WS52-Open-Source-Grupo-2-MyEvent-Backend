@@ -1,0 +1,23 @@
+<p>Api Service works!</p>
+<table>
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Fecha de Creación</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    @for(contact of contacts; track contact.id){
+      <tr>
+        <td>{{ contact.id }}</td>
+        <td>{{ contact.name }}</td>
+        <td>{{ contact.email }}</td>
+        <td>{{ contact.createdAt | date: 'dd/MM/yyyy hh:mm a' }}</td>
+
+      </tr>
+    }
+  </tbody>
+</table>

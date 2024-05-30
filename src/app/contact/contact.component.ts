@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {FormBuilder, FormGroup, ReactiveFormsModule, Validators} from '@angular/forms';
 import {RouterLink} from "@angular/router";
-import {NgClass} from "@angular/common";
+import {NgClass, NgIf} from "@angular/common";
 
 @Component({
   selector: 'app-contact',
@@ -9,7 +9,8 @@ import {NgClass} from "@angular/common";
   imports: [
     RouterLink,
     ReactiveFormsModule,
-    NgClass
+    NgClass,
+    NgIf
   ],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.css'
