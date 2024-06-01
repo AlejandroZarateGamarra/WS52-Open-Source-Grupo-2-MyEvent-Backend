@@ -1,8 +1,14 @@
 <div class="modal-container">
   <div class="modal-content">
     <h2>Términos y Condiciones</h2>
-    <p>El precio de una entrada revendida es del 80% del precio original.</p>
-    <p>El comprador de una entrada revendida no podrá revenderla.</p>
-    <button mat-button (click)="accept()">Aceptar</button>
+    @if (entrada.state === 1) {
+      <p>1. El precio de una entrada revendida es del 80% del precio original.</p>
+      <p>2. El comprador de una entrada revendida no podrá revenderla.</p>
+    }
+    @if (entrada.state === 2) {
+      <p>1. El comprador de una entrada revendida no podrá revenderla.</p>
+    }
+    <button mat-button (click)="cancel()">Cancelar</button>
+    <button mat-button (click)="accept(entrada)">Aceptar</button>
   </div>
 </div>

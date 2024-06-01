@@ -1,16 +1,40 @@
 /* Contenedor principal */
-.entradas-container {
+.reventa-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 20px;
 }
 
-/* Título principal */
-.entradas-titulo {
-  font-size: 2rem;
+/* Introducción */
+.reventa-introduccion {
+  font-size: 1.5rem;
+  color: #333;
   margin-bottom: 20px;
-  color: #3f51b5;
+  text-align: center;
+}
+
+/* Título principal */
+.reventa-titulo {
+  font-size: 4rem;
+  color: #e74141;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Descripción */
+.reventa-descripcion {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Contenedor de las tarjetas de entrada, ver 3 entradas por fila */
+.entradas-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 /* Estilos de la tarjeta de entrada */

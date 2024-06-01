@@ -1,8 +1,15 @@
 <div class="modal-container">
   <div class="modal-content">
-    <mat-icon>check_circle</mat-icon>
-    <h2>Reventa exitosa</h2>
-    <p>La reventa de la entrada se realizó con éxito.</p>
-    <button mat-button (click)="close()">Volver</button>
+    @if (entrada.state === 1) {
+      <h2>Reventa exitosa</h2>
+      <mat-icon>check_circle</mat-icon>
+      <p>La reventa de la entrada se realizó con éxito.</p>
+    }
+    @if (entrada.state === 2) {
+      <h2>Compra exitosa</h2>
+      <mat-icon>check_circle</mat-icon>
+      <p>La compra de la entrada se realizó con éxito.</p>
+    }
+    <button mat-button (click)="close(entrada)">Volver</button>
   </div>
 </div>

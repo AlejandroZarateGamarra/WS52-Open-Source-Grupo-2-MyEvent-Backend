@@ -1,7 +1,5 @@
 import { Injectable } from '@angular/core';
 import { Entrada } from "../../shared/models/Entrada";
-import { Observable } from "rxjs";
-import { HttpClient } from "@angular/common/http";
 
 @Injectable({
   providedIn: 'root'
@@ -9,33 +7,17 @@ import { HttpClient } from "@angular/common/http";
 export class EntradaService {
   private entradasURL = 'http://localhost:3000/entradas';
 
-  constructor(private http: HttpClient) { }
+  constructor() {}
 
   // Obtener todas las entradas
-  getEntradas(): Observable<Entrada[]> {
-    return this.http.get<Entrada[]>(this.entradasURL);
+  async getEntradas(): Promise<Entrada[]> {
+    const data = await fetch(this.entradasURL);
+    return (await data.json()) ?? []; //return array if null data
   }
 
   // Obtener una entrada por ID
-  getEntrada(id: number): Observable<Entrada> {
-    const url = `${this.entradasURL}/${id}`;
-    return this.http.get<Entrada>(url);
-  }
-
-  // Crear una nueva entrada
-  addEntrada(entrada: Entrada): Observable<Entrada> {
-    return this.http.post<Entrada>(this.entradasURL, entrada);
-  }
-
-  // Actualizar una entrada existente
-  updateEntrada(entrada: Entrada): Observable<Entrada> {
-    const url = `${this.entradasURL}/${entrada.id}`;
-    return this.http.put<Entrada>(url, entrada);
-  }
-
-  // Eliminar una entrada
-  deleteEntrada(id: number): Observable<void> {
-    const url = `${this.entradasURL}/${id}`;
-    return this.http.delete<void>(url);
+  async getEntrada(id: number): Promise<Entrada> {
+    const data = await fetch(`${this.entradasURL}/${id}`);
+    return await data.json() ?? [];
   }
 }

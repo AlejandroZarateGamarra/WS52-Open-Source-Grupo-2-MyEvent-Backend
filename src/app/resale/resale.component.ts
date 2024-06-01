@@ -8,6 +8,7 @@ import {EntradaDetailsComponent} from "./entrada-details/entrada-details.compone
 import {MatDialog} from "@angular/material/dialog";
 import {TermsComponent} from "./terms/terms.component";
 import {SuccessComponent} from "./success/success.component";
+import {SharedService} from "../services/shared/shared.service";
 
 @Component({
   selector: 'app-resale',
@@ -20,23 +21,24 @@ import {SuccessComponent} from "./success/success.component";
   templateUrl: './resale.component.html',
   styleUrl: './resale.component.css'
 })
-export class ResaleComponent implements OnInit {
+export class ResaleComponent {
   entradas: Entrada[] = [];
 
-  constructor(private entradaService: EntradaService, private dialog: MatDialog) { }
-
-  ngOnInit() {
+  constructor(
+    private entradaService: EntradaService,
+    private dialog: MatDialog
+  ) {
     this.getEntradas();
   }
 
-  getEntradas() {
-    this.entradaService.getEntradas().subscribe(data => {
-      this.entradas = data.filter(entrada => !entrada.resold);
-    });
+  getEntradas(): void {
+    this.entradaService.getEntradas().then((entradaList: Entrada[]) => {
+      this.entradas = entradaList.filter(e => e.state === 1)
+    })
   }
 
-  trackByEntradaId(index: number, entrada: Entrada): number {
-    return entrada.id;
+  refreshList(): void {
+    this.getEntradas();
   }
 
   openDetails(entrada: Entrada) {
@@ -46,23 +48,8 @@ export class ResaleComponent implements OnInit {
   }
 
   openTerms(entrada: Entrada): void {
-    const dialogRef = this.dialog.open(TermsComponent, {
+    this.dialog.open(TermsComponent, {
       data: entrada
-    });
-
-    dialogRef.afterClosed().subscribe(result => {
-      if (result && result.resold) {
-        // Si la entrada ha sido revendida, actualizar la lista de entradas
-        this.entradas = this.entradas.filter(e => e.id !== result.id);
-
-        // Abrir el diálogo de éxito
-        const successRef = this.dialog.open(SuccessComponent);
-
-        successRef.afterClosed().subscribe(() => {
-          // Después de cerrar el diálogo de éxito, recargar la lista
-          this.getEntradas();
-        });
-      }
     });
   }
 }

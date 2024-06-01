@@ -4,7 +4,6 @@ import {MatButtonModule} from "@angular/material/button";
 import { Entrada } from "../../shared/models/Entrada";
 import {SuccessComponent} from "../success/success.component";
 
-
 @Component({
   selector: 'app-terms',
   standalone: true,
@@ -21,11 +20,16 @@ export class TermsComponent {
     private dialog: MatDialog
     ) {}
 
-  accept(): void {
-    this.entrada.resold = true; // Cambiar el estado de la entrada
-    this.dialogRef.close(this.entrada); // Cerrar el diálogo actual
+  cancel(): void {
+    this.dialogRef.close();
+  }
+
+  accept(entrada: Entrada): void {
+    this.dialogRef.close(); // Cerrar el diálogo actual
 
     // Abrir el diálogo de éxito
-    this.dialog.open(SuccessComponent);
+    this.dialog.open(SuccessComponent, {
+      data: entrada
+    });
   }
 }

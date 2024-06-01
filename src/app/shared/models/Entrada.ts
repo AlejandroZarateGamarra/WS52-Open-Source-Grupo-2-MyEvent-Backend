@@ -5,7 +5,7 @@ export class Entrada {
   date: string;
   address: string;
   type: string;
-  resold: boolean;
+  state: number;
 
   constructor() {
     this.id = 0;
@@ -14,6 +14,6 @@ export class Entrada {
     this.date = "";
     this.address = "";
     this.type = "";
-    this.resold = false;
+    this.state = 0;
   }
 }

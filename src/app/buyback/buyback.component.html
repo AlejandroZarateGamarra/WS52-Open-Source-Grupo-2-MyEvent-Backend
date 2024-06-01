@@ -1,16 +1,26 @@
-<div class="Recompra-container">
-  <div>
-    <h1 class="Recompra-titulo">Entradas en reventa</h1>
+<div class="recompra-container">
+  <div class="recompra-introduccion">
+    <h1 class="recompra-titulo">Entradas en reventa</h1>
+    <div class="recompra-descripcion">
+      <p>Tickets disponibles para comprar.</p>
+      <p><b>Ver más:</b> Se muestra la información detallada de la entrada.</p>
+      <p><b>Comprar:</b> Se inicia el proceso de compra de la entrada.</p>
+    </div>
   </div>
-  <mat-card class="entrada-card" *ngFor="let entrada of entradas; trackBy: trackByEntradaId">
-    <mat-card-header class="entrada-header">
-      <mat-card-title class="entrada-titulo">{{ entrada.title }}</mat-card-title>
-    </mat-card-header>
-    <mat-card-content class="entrada-contenido">
-      <p class="entrada-precio">{{ entrada.price }}</p>
-    </mat-card-content>
-    <mat-card-actions class="entrada-acciones">
-      <button mat-button class="btn-ver-mas" (click)="openDetails(entrada)">Ver más</button>
-      <button mat-button class="btn-comprar">Comprar</button>
-    </mat-card-actions>
-  </mat-card>div>
+  <div class="entradas-list">
+  @for(entrada of entradas; track entrada.id){
+    <mat-card class="entrada-card">
+      <mat-card-header class="entrada-header">
+        <mat-card-title class="entrada-titulo">{{ entrada.title }}</mat-card-title>
+      </mat-card-header>
+      <mat-card-content class="entrada-contenido">
+        <p class="entrada-precio">Precio: {{ entrada.price }} soles</p>
+      </mat-card-content>
+      <mat-card-actions class="entrada-acciones">
+        <button mat-button class="btn-ver-mas" (click)="openDetails(entrada)">Ver más</button>
+        <button mat-button class="btn-comprar" (click)="openTerms(entrada)">Comprar</button>
+      </mat-card-actions>
+    </mat-card>
+  }
+  </div>
+</div>
