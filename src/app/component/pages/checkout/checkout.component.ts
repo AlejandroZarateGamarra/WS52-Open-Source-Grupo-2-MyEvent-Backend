@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { CartService } from '../services/cart/cart.service';
-import { Cart } from '../shared/models/Cart';
+import { CartService } from '../../../services/cart/cart.service';
+import { Cart } from '../../../shared/models/Cart';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 

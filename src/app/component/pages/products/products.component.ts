@@ -1,10 +1,10 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterLink } from '@angular/router';
-import { Product } from '../shared/models/Product';
-import { ProductServices } from '../services/products/products.services';
-import { CartService } from '../services/cart/cart.service';
+import { Product } from '../../../shared/models/Product';
+import { ProductServices } from '../../../services/products/products.services';
+import { CartService } from '../../../services/cart/cart.service';
 import {
   MatCard,
   MatCardActions,
@@ -14,6 +14,8 @@ import {
   MatCardTitle
 } from "@angular/material/card";
 import {MatButton} from "@angular/material/button";
+import {EventService} from "../../../services/event/event.service";
+
 @Component({
   selector: 'app-products',
   standalone: true,
@@ -22,9 +24,10 @@ import {MatButton} from "@angular/material/button";
   templateUrl: './products.component.html',
   styleUrl: './products.component.css',
 })
-export class ProductsComponent {
+export class ProductsComponent implements OnInit{
   pruductArr: Product[] = [];
 
+ /*
   constructor(
     private productServices: ProductServices,
     private cartservice: CartService
@@ -35,5 +38,25 @@ export class ProductsComponent {
   }
   addCartItem(product: Product) {
     this.cartservice.addToCart(product);
+  }
+  */
+
+  //------------------
+
+  events: any = [];
+
+  constructor(private eventService: EventService){ }
+
+  ngOnInit(): void {
+    this.listEvents();
+  }
+
+  listEvents(){
+    this.eventService.getAllEvents().subscribe(
+      data => {
+        this.events = data;
+        console.log(this.events);
+      }
+    );
   }
 }

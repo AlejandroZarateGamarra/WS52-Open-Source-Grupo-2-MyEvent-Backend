@@ -1,5 +1,5 @@
 import {Component, inject, OnInit} from '@angular/core';
-import {ContactService} from "../services/contact/contact.service";
+import {ContactService} from "../../../services/contact/contact.service";
 import {DatePipe} from "@angular/common";
 
 @Component({

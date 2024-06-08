@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute, Router, RouterLink } from '@angular/router';
-import { ProductServices } from '../services/products/products.services';
-import { Product } from '../shared/models/Product';
+import { ProductServices } from '../../../services/products/products.services';
+import { Product } from '../../../shared/models/Product';
 import { CommonModule ,ViewportScroller} from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { CartService } from '../services/cart/cart.service';
+import { CartService } from '../../../services/cart/cart.service';
 import { LatestProductsComponent } from '../latest-products/latest-products.component';
 
 @Component({
@@ -38,7 +38,7 @@ export class ProductdetailsComponent {
       .then((returnedproduct) => {
         this.product = returnedproduct;
       });
-   
+
       window.scrollTo(0, 0);
   }
   //calling service to display product when show details button clicked in related products corasoul

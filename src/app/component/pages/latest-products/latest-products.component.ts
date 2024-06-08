@@ -1,8 +1,8 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Output, EventEmitter } from '@angular/core';
-import { CartService } from '../services/cart/cart.service';
-import { ProductServices } from '../services/products/products.services';
-import { Product } from '../shared/models/Product';
+import { CartService } from '../../../services/cart/cart.service';
+import { ProductServices } from '../../../services/products/products.services';
+import { Product } from '../../../shared/models/Product';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { CommonModule } from '@angular/common';
 import { RouterLink } from '@angular/router';

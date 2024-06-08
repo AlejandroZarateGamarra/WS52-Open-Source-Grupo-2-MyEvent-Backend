@@ -11,9 +11,6 @@
 </div>
 
 <div class="single-product-area">
-
-
-
   <div class="zigzag-bottom"></div>
   <div class="container">
     <div class="row">
@@ -43,14 +40,24 @@
                   data-product_id="70"
                   rel="nofollow"
                   routerLink="/cart"
-                  (click)="addCartItem(product)"
+
                 >Add to cart</a>
+                <!--
+                (click)=""addCartItem(product
+                -->
               </div>
             </mat-card-actions>
           </mat-card>
         </div>
       </div>
       }
+
+      <!-- USO DE BACKEND -->
+      <ul>
+        <li *ngFor="let c of events">
+          {{c.id}} - {{c.name}} - {{c.date}}
+        </li>
+      </ul>
 
       <div class="row">
         <div class="col-md-12">

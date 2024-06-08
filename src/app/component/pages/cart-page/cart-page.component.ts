@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { CartService } from '../services/cart/cart.service';
-import { Cart } from '../shared/models/Cart';
+import { CartService } from '../../../services/cart/cart.service';
+import { Cart } from '../../../shared/models/Cart';
 import { RouterLink } from '@angular/router';
 import { FormsModule, NonNullableFormBuilder } from '@angular/forms';
 import { CommonModule } from '@angular/common';
@@ -14,7 +14,7 @@ import { CommonModule } from '@angular/common';
 })
 export class CartPageComponent {
   cart!: Cart;
-  
+
   constructor(private cartservice: CartService) {
     this.setCart();
     window.scrollTo(0, 0);
