@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, RouterOutlet, Routes } from '@angular/router';
 import { FooterComponent } from './footer/footer.component';
@@ -33,6 +33,14 @@ import {HttpClient} from "@angular/common/http";
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'Angular-ECommerce';
+  backend_url = 'http://localhost:8080/api/v1/users/all';
+
+  constructor(private http: HttpClient) {}
+  ngOnInit() {
+    this.http.get(this.backend_url).subscribe(data => {
+      console.log(data);
+    });
+  }
 }

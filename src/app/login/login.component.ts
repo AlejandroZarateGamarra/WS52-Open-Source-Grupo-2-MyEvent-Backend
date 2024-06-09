@@ -6,8 +6,11 @@ import {FormsModule} from '@angular/forms';
 import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatCheckboxModule} from '@angular/material/checkbox';
+
 import {UserService} from "../services/user/user.services";
 import { User } from '../shared/models/User';
+import { BackendUserService } from '../services/backend-user.service';
+import { BackendUser } from '../shared/models/backend-user.model';
 import { HttpClient } from '@angular/common/http';
 
 @Component({
@@ -23,14 +26,13 @@ export class LoginComponent {
   mostrarContrasena: boolean = false;
 
   currentUser: User | undefined; // Almacena el usuario actual
-
-  constructor(private router: Router, private http: HttpClient, private userService: UserService) {}
+  Backend_User: BackendUser | undefined;
+  constructor(private router: Router, private http: HttpClient, private userService: UserService, private backendUserService: BackendUserService) {}
 
   verificarCredenciales() {
-    this.userService.verifyUserCredentials(this.email, this.contrasena).subscribe((user: User | undefined) => {
-      if (user) {
-        this.currentUser = user;
-        this.userService.setCurrentUser(user);
+    this.backendUserService.getUserByEmail(this.email).subscribe((user: BackendUser | undefined) => {
+      if (user && user.password === this.contrasena) {
+        this.Backend_User = user;
         this.redirectUser();
       } else {
         alert('Usuario y/o contraseña inválidos');
@@ -39,8 +41,8 @@ export class LoginComponent {
   }
 
   redirectUser() {
-    if (this.currentUser?.premium) {
-      this.router.navigate(['']);
+    if (this.Backend_User?.premium) {
+      this.router.navigate(['/nopremium']);
     } else {
       // Redirige al usuario no premium a su pantalla
       this.router.navigate(['/nopremium']);
