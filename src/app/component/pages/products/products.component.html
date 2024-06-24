@@ -52,12 +52,78 @@
       </div>
       }
 
-      <!-- USO DE BACKEND -->
-      <ul>
-        <li *ngFor="let c of events">
-          {{c.id}} - {{c.name}} - {{c.date}}
-        </li>
-      </ul>
+      @for(product of pruductArr; track product.id) {
+        <div class="col-md-3 col-sm-6">
+          <div class="single-shop-product">
+            <mat-card class="example-card">
+              <div class="card-header">
+                <mat-card-header>
+                  <mat-card-title routerLink="/product/{{ product.id }}" class="card-title"><span>{{ product.title }}</span></mat-card-title>
+                </mat-card-header>
+              </div>
+              <img mat-card-image src="{{ product.photo }}" alt="Photo of a Shiba Inu">
+              <mat-card-content>
+                <div class="product-carousel-price">
+                  <mat-card-subtitle class="detail">{{ product.location }}</mat-card-subtitle>
+                  <ins>{{ product.Price | currency:'S/.' }}</ins>
+                  <del>{{ product.discount | currency:'S/.' }}</del>
+                </div>
+              </mat-card-content>
+              <mat-card-actions>
+                <div class="product-option-shop">
+                  <a
+                    class="add_to_cart_button"
+                    data-quantity="1"
+                    data-product_sku=""
+                    data-product_id="70"
+                    rel="nofollow"
+                    routerLink="/cart"
+
+                  >Add to cart</a>
+                  <!--
+                  (click)=""addCartItem(product
+                  -->
+                </div>
+              </mat-card-actions>
+            </mat-card>
+          </div>
+        </div>
+      }
+
+      <div *ngFor="let event of events, let i = index" class="col-md-3 col-sm-6">
+        <div class="single-shop-product">
+          <mat-card class="example-card">
+            <div class="card-header">
+              <mat-card-header>
+                <mat-card-title routerLink="/event/{{ event.id }}" class="card-title"><span>{{ event.name }}</span></mat-card-title>
+              </mat-card-header>
+            </div>
+            <!-- Aquí puedes poner una imagen predeterminada o agregar una propiedad de imagen a tu objeto de evento -->
+            <img mat-card-image src="assets/img/events/event{{i + 1}}.png" alt="Photo of an event">
+            <mat-card-content>
+              <div class="product-carousel-price">
+                <!-- Aquí puedes poner la ubicación del evento o cualquier otra propiedad que desees mostrar -->
+                <mat-card-subtitle class="detail">{{ event.location }}</mat-card-subtitle>
+                <!-- Aquí puedes poner el precio del evento o cualquier otra propiedad que desees mostrar -->
+                <ins>{{ event.priceTicket | currency:'S/.' }}</ins>
+              </div>
+            </mat-card-content>
+            <mat-card-actions>
+              <div class="product-option-shop">
+                <a
+                  class="add_to_cart_button"
+                  data-quantity="1"
+                  data-product_sku=""
+                  data-product_id="70"
+                  rel="nofollow"
+                  routerLink="/cart"
+                >Add to cart</a>
+              </div>
+            </mat-card-actions>
+          </mat-card>
+        </div>
+      </div>
+
 
       <div class="row">
         <div class="col-md-12">
