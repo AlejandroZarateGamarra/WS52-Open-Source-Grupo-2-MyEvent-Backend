@@ -1,7 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Output, EventEmitter } from '@angular/core';
 import { CartService } from '../../../services/cart/cart.service';
-import { ProductServices } from '../../../services/products/products.services';
+import { ProductsServices } from '../../../services/products/products.services';
 import { Product } from '../../../shared/models/Product';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { CommonModule } from '@angular/common';
@@ -26,10 +26,10 @@ export class LatestProductsComponent {
   pruductArr: Product[] = [];
 
   constructor(
-    private productServices: ProductServices,
+    private productServices: ProductsServices,
     private cartservice: CartService
   ) {
-    this.productServices.getAllProducts().then((productList: Product[]) => {
+    this.productServices.getAllEvents().subscribe((productList: Product[]) => {
       this.pruductArr = productList;
     });
   }

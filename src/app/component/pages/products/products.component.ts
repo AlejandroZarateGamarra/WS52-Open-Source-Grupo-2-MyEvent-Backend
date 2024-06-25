@@ -3,7 +3,7 @@ import {Component, OnInit} from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterLink } from '@angular/router';
 import { Product } from '../../../shared/models/Product';
-import { ProductServices } from '../../../services/products/products.services';
+import { ProductsServices } from '../../../services/products/products.services';
 import { CartService } from '../../../services/cart/cart.service';
 import {
   MatCard,
@@ -24,39 +24,23 @@ import {EventService} from "../../../services/event/event.service";
   templateUrl: './products.component.html',
   styleUrl: './products.component.css',
 })
-export class ProductsComponent implements OnInit{
-  pruductArr: Product[] = [];
+export class ProductsComponent implements OnInit {
+  arrProduct: Product[] = [];
 
- /*
   constructor(
-    private productServices: ProductServices,
-    private cartservice: CartService
+    private productServices: ProductsServices,
+    private cartService: CartService
   ) {
-    this.productServices.getAllProducts().then((productList: Product[]) => {
-      this.pruductArr = productList;
+    this.productServices.getAllEvents().subscribe((productList: Product[]) => {
+      this.arrProduct = productList;
     });
   }
-  addCartItem(product: Product) {
-    this.cartservice.addToCart(product);
-  }
-  */
-
-  //------------------
-
-  events: any = [];
-
-  constructor(private eventService: EventService){ }
 
   ngOnInit(): void {
-    this.listEvents();
+    // Aquí puedes poner cualquier código que necesites ejecutar cuando se inicializa el componente
   }
 
-  listEvents(){
-    this.eventService.getAllEvents().subscribe(
-      data => {
-        this.events = data;
-        console.log(this.events);
-      }
-    );
+  addCartItem(product: Product) {
+    this.cartService.addToCart(product);
   }
 }

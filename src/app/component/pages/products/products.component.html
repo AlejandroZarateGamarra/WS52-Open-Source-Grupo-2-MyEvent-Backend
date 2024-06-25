@@ -14,83 +14,8 @@
   <div class="zigzag-bottom"></div>
   <div class="container">
     <div class="row">
-      @for(product of pruductArr; track product.id) {
-      <div class="col-md-3 col-sm-6">
-        <div class="single-shop-product">
-          <mat-card class="example-card">
-            <div class="card-header">
-              <mat-card-header>
-                <mat-card-title routerLink="/product/{{ product.id }}" class="card-title"><span>{{ product.title }}</span></mat-card-title>
-              </mat-card-header>
-            </div>
-            <img mat-card-image src="{{ product.photo }}" alt="Photo of a Shiba Inu">
-            <mat-card-content>
-              <div class="product-carousel-price">
-                <mat-card-subtitle class="detail">{{ product.location }}</mat-card-subtitle>
-                <ins>{{ product.Price | currency:'S/.' }}</ins>
-                <del>{{ product.discount | currency:'S/.' }}</del>
-              </div>
-            </mat-card-content>
-            <mat-card-actions>
-              <div class="product-option-shop">
-                <a
-                  class="add_to_cart_button"
-                  data-quantity="1"
-                  data-product_sku=""
-                  data-product_id="70"
-                  rel="nofollow"
-                  routerLink="/cart"
 
-                >Add to cart</a>
-                <!--
-                (click)=""addCartItem(product
-                -->
-              </div>
-            </mat-card-actions>
-          </mat-card>
-        </div>
-      </div>
-      }
-
-      @for(product of pruductArr; track product.id) {
-        <div class="col-md-3 col-sm-6">
-          <div class="single-shop-product">
-            <mat-card class="example-card">
-              <div class="card-header">
-                <mat-card-header>
-                  <mat-card-title routerLink="/product/{{ product.id }}" class="card-title"><span>{{ product.title }}</span></mat-card-title>
-                </mat-card-header>
-              </div>
-              <img mat-card-image src="{{ product.photo }}" alt="Photo of a Shiba Inu">
-              <mat-card-content>
-                <div class="product-carousel-price">
-                  <mat-card-subtitle class="detail">{{ product.location }}</mat-card-subtitle>
-                  <ins>{{ product.Price | currency:'S/.' }}</ins>
-                  <del>{{ product.discount | currency:'S/.' }}</del>
-                </div>
-              </mat-card-content>
-              <mat-card-actions>
-                <div class="product-option-shop">
-                  <a
-                    class="add_to_cart_button"
-                    data-quantity="1"
-                    data-product_sku=""
-                    data-product_id="70"
-                    rel="nofollow"
-                    routerLink="/cart"
-
-                  >Add to cart</a>
-                  <!--
-                  (click)=""addCartItem(product
-                  -->
-                </div>
-              </mat-card-actions>
-            </mat-card>
-          </div>
-        </div>
-      }
-
-      <div *ngFor="let event of events, let i = index" class="col-md-3 col-sm-6">
+      <div *ngFor="let event of arrProduct, let i = index" class="col-md-3 col-sm-6">
         <div class="single-shop-product">
           <mat-card class="example-card">
             <div class="card-header">
@@ -103,7 +28,7 @@
             <mat-card-content>
               <div class="product-carousel-price">
                 <!-- Aquí puedes poner la ubicación del evento o cualquier otra propiedad que desees mostrar -->
-                <mat-card-subtitle class="detail">{{ event.location }}</mat-card-subtitle>
+                <mat-card-subtitle class="detail">{{ event.category }}</mat-card-subtitle>
                 <!-- Aquí puedes poner el precio del evento o cualquier otra propiedad que desees mostrar -->
                 <ins>{{ event.priceTicket | currency:'S/.' }}</ins>
               </div>
@@ -117,7 +42,11 @@
                   data-product_id="70"
                   rel="nofollow"
                   routerLink="/cart"
+                  (click)=addCartItem(event)
                 >Add to cart</a>
+                <!--
+                (click)=""addCartItem(product
+                -->
               </div>
             </mat-card-actions>
           </mat-card>

@@ -19,7 +19,7 @@
         <div class="single-sidebar">
           <h2 class="sidebar-title">Search Events</h2>
           <form action="#">
-            <input type="text" placeholder="Search products..." />
+            <input type="text" placeholder="Search events..." />
             <input type="submit" value="Search" />
           </form>
         </div>
@@ -32,9 +32,9 @@
               class="recent-thumb"
               alt=""
             />
-            <h2><a routerLink="/product">Event 1</a></h2>
+            <h2><a href="">Ferxxocalipsis</a></h2>
             <div class="product-sidebar-price">
-              <ins>$700.00</ins> <del>$800.00</del>
+              <ins>$275.00</ins> <del>$345.00</del>
             </div>
           </div>
           <div class="thubmnail-recent">
@@ -43,9 +43,9 @@
               class="recent-thumb"
               alt=""
             />
-            <h2><a routerLink="/product">Event 1</a></h2>
+            <h2><a href="">Alvaro Rod en Ayacucho</a></h2>
             <div class="product-sidebar-price">
-              <ins>$700.00</ins> <del>$800.00</del>
+              <ins>$73.00</ins> <del>$100.00</del>
             </div>
           </div>
           <div class="thubmnail-recent">
@@ -54,9 +54,9 @@
               class="recent-thumb"
               alt=""
             />
-            <h2><a routerLink="/product">Event 1</a></h2>
+            <h2><a href="">Temporada de Abono 2024</a></h2>
             <div class="product-sidebar-price">
-              <ins>$700.00</ins> <del>$800.00</del>
+              <ins>$50.00</ins> <del>$80.00</del>
             </div>
           </div>
           <div class="thubmnail-recent">
@@ -65,9 +65,9 @@
               class="recent-thumb"
               alt=""
             />
-            <h2><a routerLink="/product">Event 1</a></h2>
+            <h2><a href="">Un bolero Un vals, Eva Ayllón</a></h2>
             <div class="product-sidebar-price">
-              <ins>$700.00</ins> <del>$800.00</del>
+              <ins>$82.00</ins> <del>$100.00</del>
             </div>
           </div>
         </div>
@@ -75,11 +75,11 @@
         <div class="single-sidebar">
           <h2 class="sidebar-title">Recent Posts</h2>
           <ul>
-            <li><a routerLink="">Event 1</a></li>
-            <li><a routerLink="">Event 1</a></li>
-            <li><a routerLink="">Event 1</a></li>
-            <li><a routerLink="">Event 1</a></li>
-            <li><a routerLink="">Event 1</a></li>
+            <li><a routerLink="">Review 1</a></li>
+            <li><a routerLink="">Review 1</a></li>
+            <li><a routerLink="">Review 1</a></li>
+            <li><a routerLink="">Review 1</a></li>
+            <li><a routerLink="">Review 1</a></li>
           </ul>
         </div>
       </div>
@@ -119,24 +119,18 @@
 
                     <td class="product-thumbnail">
                       <a routerLink="/product">
-                        <img
-                          width="145"
-                          height="145"
-                          alt="poster_1_up"
-                          class="shop_thumbnail"
-                          src="{{ cartItem.product.photo }}"
-                      /></a>
+                        </a>
                     </td>
 
                     <td class="product-name">
                       <a routerLink="/product/{{ cartItem.product.id }}">{{
-                        cartItem.product.title
+                        cartItem.product.name
                       }}</a>
                     </td>
 
                     <td class="product-price">
                       <span class="amount">{{
-                        cartItem.product.Price | currency:'S/.'
+                        cartItem.product.priceTicket | currency:'S/.'
                       }}</span>
                     </td>
 

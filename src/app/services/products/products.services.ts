@@ -1,6 +1,24 @@
 import { Product } from '../../shared/models/Product';
 import { Injectable } from '@angular/core';
+import {HttpClient} from "@angular/common/http";
+import {Observable} from "rxjs";
 @Injectable({ providedIn: 'root' })
+
+export class ProductsServices {
+
+  private api: string = 'http://localhost:8080/api/v1/events';
+
+  constructor(private http:HttpClient) { }
+
+  getAllEvents():Observable<Product []>{
+    return this.http.get<Product[]>(this.api);
+  }
+  getProductById(id: number): Observable<Product> {
+    return this.http.get<Product>(`${this.api}/${id}`);
+  }
+}
+
+/*
 export class ProductServices {
   productsURL = 'http://localhost:3000/products';
   constructor() {}
@@ -23,3 +41,4 @@ export class ProductServices {
     return (await data.json()) ?? []; //return array if null data
   }
 }
+*/

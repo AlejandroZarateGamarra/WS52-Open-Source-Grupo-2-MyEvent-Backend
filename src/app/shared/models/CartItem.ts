@@ -9,6 +9,6 @@ export default class CartItem {
     this.price;
   }
   get price(): number {
-    return this.product.Price * this.quantity;
+    return this.product.priceTicket * this.quantity;
   }
 }
