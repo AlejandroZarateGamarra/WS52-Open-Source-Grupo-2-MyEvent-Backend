@@ -6,6 +6,8 @@ import { ProductdetailsComponent } from './component/pages/productdetails/produc
 import { CheckoutComponent } from './component/pages/checkout/checkout.component';
 import {ContactComponent} from "./component/pages/contact/contact.component";
 import {OthersComponent} from "./component/test/others/others.component";
+import {ThePaymentViewComponent} from "./component/payment_view/the-payment-view/the-payment-view.component";
+
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -15,5 +17,6 @@ export const routes: Routes = [
   { path: 'checkout', component: CheckoutComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'others', component: OthersComponent },
+  { path: 'payment', component: ThePaymentViewComponent }
 
 ];

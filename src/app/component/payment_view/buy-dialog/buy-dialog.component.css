@@ -1,0 +1,36 @@
+.transaction-success {
+  background-color: #f8f9fa;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.transaction-success h1 {
+  color: #ff3282;
+  font-size: 2.5em;
+}
+
+.transaction-success mat-icon {
+  color: #ff3282;
+}
+
+.transaction-success p {
+  font-size: 1.2em;
+  color: #6c757d;
+}
+
+.transaction-success .continue-shopping {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #ff3282;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.transaction-success .continue-shopping:hover {
+  background-color: #ff3282;
+}
