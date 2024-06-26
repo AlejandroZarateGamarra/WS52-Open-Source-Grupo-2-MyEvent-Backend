@@ -20,3 +20,10 @@ img{
 .col-sm-10.col-md-6 {
   margin-top: -10px;
 }
+.login-nav{
+  margin-left:36rem;
+  float: left;
+  background: #ee4f4f;
+  color: #fff;
+}
+

@@ -10,11 +10,13 @@ import {ThePaymentViewComponent} from "./component/payment_view/the-payment-view
 import {MapsComponent} from "./component/external/maps/maps.component";
 import {LoginComponent} from "./component/login-register/login/login.component";
 import {RegisterComponent} from "./component/login-register/register/register.component";
+import {AuthGuard} from "@angular/fire/auth-guard";
 
 
 export const routes: Routes = [
-  { path: '', component: HomeComponent },
-  { path: 'products', component: ProductsComponent },
+  { path: '', component: LoginComponent },
+  { path: 'home', component: HomeComponent },
+  { path: 'products', component: ProductsComponent},
   { path: 'product/:id', component: ProductdetailsComponent },
   { path: 'cart', component: CartPageComponent },
   { path: 'checkout', component: CheckoutComponent },

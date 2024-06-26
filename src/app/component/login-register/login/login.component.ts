@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import {Router, RouterLink} from '@angular/router';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import {FormsModule} from '@angular/forms';
@@ -9,11 +9,12 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
 import {UserService} from "../../../services/user/user.services";
 import { User } from '../../../shared/models/User';
 import { HttpClient } from '@angular/common/http';
+import {AuthService} from "../../../services/auth/authservice/auth.service";
 
 @Component({
   selector: 'app-login',
   standalone: true,
-  imports: [MatFormFieldModule, MatInputModule ,FormsModule, MatButtonModule, MatIconModule, MatCheckboxModule],
+  imports: [MatFormFieldModule, MatInputModule, FormsModule, MatButtonModule, MatIconModule, MatCheckboxModule, RouterLink],
   templateUrl: './login.component.html',
   styleUrl: './login.component.css'
 })
@@ -24,7 +25,7 @@ export class LoginComponent {
 
   currentUser: User | undefined; // Almacena el usuario actual
 
-  constructor(private router: Router, private http: HttpClient, private userService: UserService) {}
+  constructor(private router: Router, private http: HttpClient, private userService: UserService, private authService: AuthService) {}
 
   verificarCredenciales() {
     this.userService.verifyUserCredentials(this.email, this.contrasena).subscribe((user: User | undefined) => {
@@ -32,7 +33,10 @@ export class LoginComponent {
         this.currentUser = user;
         this.userService.setCurrentUser(user);
         this.redirectUser();
+        this.router.navigate(['/products']);
       } else {
+        // Si las credenciales son incorrectas, muestra un mensaje
+        this.router.navigate(['/products']);
         alert('Usuario y/o contraseña inválidos');
       }
     });
