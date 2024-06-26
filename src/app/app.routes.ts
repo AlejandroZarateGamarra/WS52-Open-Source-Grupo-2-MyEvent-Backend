@@ -8,7 +8,8 @@ import {ContactComponent} from "./component/pages/contact/contact.component";
 import {OthersComponent} from "./component/test/others/others.component";
 import {ThePaymentViewComponent} from "./component/payment_view/the-payment-view/the-payment-view.component";
 import {MapsComponent} from "./component/external/maps/maps.component";
-
+import {LoginComponent} from "./component/login-register/login/login.component";
+import {RegisterComponent} from "./component/login-register/register/register.component";
 
 
 export const routes: Routes = [
@@ -20,6 +21,8 @@ export const routes: Routes = [
   { path: 'contact', component: ContactComponent },
   { path: 'others', component: OthersComponent },
   { path: 'payment', component: ThePaymentViewComponent },
-  { path: 'maps', component: MapsComponent }
+  { path: 'maps', component: MapsComponent },
+  { path: 'login', component: LoginComponent },
+  { path: 'register', component: RegisterComponent}
 
 ];
