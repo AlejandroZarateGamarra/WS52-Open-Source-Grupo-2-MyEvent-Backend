@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {FormBuilder, FormGroup, ReactiveFormsModule, Validators} from '@angular/forms';
 import {RouterLink} from "@angular/router";
 import {NgClass, NgIf} from "@angular/common";
+import {MapsComponent} from "../../external/maps/maps.component";
 
 @Component({
   selector: 'app-contact',
@@ -10,7 +11,8 @@ import {NgClass, NgIf} from "@angular/common";
     RouterLink,
     ReactiveFormsModule,
     NgClass,
-    NgIf
+    NgIf,
+    MapsComponent
   ],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.css'

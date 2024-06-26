@@ -7,6 +7,8 @@ import { CheckoutComponent } from './component/pages/checkout/checkout.component
 import {ContactComponent} from "./component/pages/contact/contact.component";
 import {OthersComponent} from "./component/test/others/others.component";
 import {ThePaymentViewComponent} from "./component/payment_view/the-payment-view/the-payment-view.component";
+import {MapsComponent} from "./component/external/maps/maps.component";
+
 
 
 export const routes: Routes = [
@@ -17,6 +19,7 @@ export const routes: Routes = [
   { path: 'checkout', component: CheckoutComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'others', component: OthersComponent },
-  { path: 'payment', component: ThePaymentViewComponent }
+  { path: 'payment', component: ThePaymentViewComponent },
+  { path: 'maps', component: MapsComponent }
 
 ];

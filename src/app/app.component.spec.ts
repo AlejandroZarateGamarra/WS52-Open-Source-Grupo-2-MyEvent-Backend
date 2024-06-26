@@ -17,13 +17,13 @@ describe('AppComponent', () => {
   it(`should have the 'Angular-ECommerce' title`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('Angular-ECommerce');
+    expect(app.title).toEqual('myevent_appweb-opensource');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, Angular-ECommerce');
+    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, myevent_appweb-opensource');
   });
 });
