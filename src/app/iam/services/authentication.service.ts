@@ -65,7 +65,7 @@ export class AuthenticationService {
           this.signedInUsername.next(response.correo);
           localStorage.setItem('token', response.token);
           console.log(`Signed in as ${response.correo} with token ${response.token}`);
-          this.router.navigate(['/']).then();
+          this.router.navigate(['/home']).then();
         },
         error: (error) => {
           this.signedIn.next(false);
