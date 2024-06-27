@@ -1,7 +1,7 @@
 import { AuthenticationService } from '../../services/authentication.service';
 import { Component, OnInit } from '@angular/core';
 import { BaseFormComponent } from '../../../shared/components/base-form.component';
-import {FormBuilder, FormGroup, ReactiveFormsModule, Validators} from '@angular/forms';
+import {FormBuilder, FormControl, FormGroup, ReactiveFormsModule, Validators} from '@angular/forms';
 import { SignUpRequest } from '../../model/sign-up.request';
 import {MatCard, MatCardContent, MatCardHeader} from "@angular/material/card";
 import {MatFormField} from "@angular/material/form-field";
@@ -37,17 +37,17 @@ export class SignUpComponent extends BaseFormComponent implements OnInit{
   }
 
   ngOnInit(): void {
-      this.form= this.builder.group({
-        name:['', Validators.required],
-        surname:['', Validators.required],
-        correo:['', Validators.required],
-        phone:['', Validators.required],
-        dni:['', Validators.required],
-        tipoDeCuenta:['', Validators.required],
-        password:['', Validators.required],
-        premium:['', Validators.required]
+    this.form= this.builder.group({
+      name:['', Validators.required],
+      surname:['', Validators.required],
+      correo:['', Validators.required],
+      phone:['', Validators.required],
+      dni:['', Validators.required],
+      tipoDeCuenta:new FormControl("user"),
+      password:['', Validators.required],
+      premium:new FormControl("false")
+    })
 
-      })
   }
 
   onSubmit(){
@@ -60,8 +60,7 @@ export class SignUpComponent extends BaseFormComponent implements OnInit{
     let dni= this.form.value.dni;
     let tipoDeCuenta= this.form.value.tipoDeCuenta;
     let premium= this.form.value.premium;
-    const signUpRequest = new SignUpRequest(name, surname, correo,password, phone, dni, tipoDeCuenta, premium);
-    this.AuthenticationService.signUp(signUpRequest);
+    const signUpRequest = new SignUpRequest(name, surname, correo, password, phone, dni, tipoDeCuenta, premium);    this.AuthenticationService.signUp(signUpRequest);
     this.submitted= true;
   }
 
