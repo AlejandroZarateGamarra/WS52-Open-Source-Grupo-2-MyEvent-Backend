@@ -1,0 +1,232 @@
+<div class="product-big-title-area">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="product-bit-title text-center">
+          <h2>EVENT LIST</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="single-product-area">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="single-sidebar">
+          <h2 class="sidebar-title">Search Events</h2>
+          <form action="">
+            <input type="text" placeholder="Search events..." />
+            <input type="submit" value="Search" />
+          </form>
+        </div>
+
+        <div class="single-sidebar">
+          <h2 class="sidebar-title">Events</h2>
+          <div class="thubmnail-recent">
+            <img
+              src="../../assets/img/product-thumb-1.jpg"
+              class="recent-thumb"
+              alt=""
+            />
+            <h2><a href="/products">{{product?.name}}</a></h2>
+            <div class="product-sidebar-price">
+              <ins>${{product?.priceTicket}}.00</ins> <del>$345.00</del>
+            </div>
+          </div>
+          <div class="thubmnail-recent">
+            <img
+              src="../../assets/img/product-thumb-1.jpg"
+              class="recent-thumb"
+              alt=""
+            />
+            <h2><a href="">Alvaro Rod en Ayacucho</a></h2>
+            <div class="product-sidebar-price">
+              <ins>$73.00</ins> <del>$100.00</del>
+            </div>
+          </div>
+          <div class="thubmnail-recent">
+            <img
+              src="../../assets/img/product-thumb-1.jpg"
+              class="recent-thumb"
+              alt=""
+            />
+            <h2><a href="">Temporada de Abono 2024</a></h2>
+            <div class="product-sidebar-price">
+              <ins>$50.00</ins> <del>$80.00</del>
+            </div>
+          </div>
+          <div class="thubmnail-recent">
+            <img
+              src="../../assets/img/product-thumb-1.jpg"
+              class="recent-thumb"
+              alt=""
+            />
+            <h2><a href="">Un bolero Un vals, Eva Ayllón</a></h2>
+            <div class="product-sidebar-price">
+              <ins>$82.00</ins> <del>$100.00</del>
+            </div>
+          </div>
+        </div>
+
+        <div class="single-sidebar">
+          <h2 class="sidebar-title">Recent Posts</h2>
+          <ul>
+            <li><a href="">Review 1</a></li>
+            <li><a href="">Review 2</a></li>
+            <li><a href="">Review 3</a></li>
+            <li><a href="">Review 4</a></li>
+            <li><a href="">Review 5</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-md-8">
+        <div class="product-content-right">
+          <div class="product-breadcroumb">
+            <a href="">Home</a>
+            <a href="">{{product?.category | titlecase}}</a>
+            <a href="">{{ product?.name }}</a>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="product-images">
+                <div class="product-main-img">
+                  <img
+                    width="400"
+                    height="500"
+                    [src]="'../../assets/img/events/event' + product?.id + '.png'" alt="" />
+                </div>
+
+                <div class="product-gallery">
+                  <img src="../../assets/img/product-thumb-1.jpg" alt="" />
+                  <img src="../../assets/img/product-thumb-2.jpg" alt="" />
+                  <img src="../../assets/img/product-thumb-3.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <div class="product-inner">
+                <h2 class="product-name">{{ product?.name }}</h2>
+                <div class="product-inner-price">
+                  <ins>{{ product?.priceTicket | currency: 'S/.' }}</ins>
+                  <del>{{ product?.discount | currency: 'S/.' }}</del>
+                </div>
+
+                <form action="" class="cart">
+                  <div class="quantity">
+                    <input
+                      type="number"
+                      size="4"
+                      class="input-text qty text"
+                      title="Qty"
+                      [(ngModel)]="quantity"
+                      name="quantity"
+                      min="1"
+                      step="1"
+                    />
+                  </div>
+                  <button
+                    class="add_to_cart_button"
+                    type="submit"
+                    routerLink="/cart"
+                    (click)="addCartItem(product)"
+                  >
+                    Add to cart
+                  </button>
+                </form>
+
+                <div class="product-inner-category">
+                  <p>
+                    Category: <a href="">{{product?.category | titlecase}}</a>. Tags:
+                    <a href="">awesome</a>, <a href="">best</a>,
+                    <a href="">sale</a>
+                  </p>
+                </div>
+
+                <div role="tabpanel">
+                  <ul class="product-tab" role="tablist">
+                    <li role="presentation" class="active">
+                      <a
+                        href="#home"
+                        aria-controls="home"
+                        role="tab"
+                        data-toggle="tab"
+                        >Description</a
+                      >
+                    </li>
+                    <li role="presentation">
+                      <a
+                        href="#profile"
+                        aria-controls="profile"
+                        role="tab"
+                        data-toggle="tab"
+                        >Reviews</a
+                      >
+                    </li>
+                  </ul>
+                  <div class="tab-content">
+                    <div
+                      role="tabpanel"
+                      class="tab-pane fade in active"
+                      id="home"
+                    >
+                      <h2>Event Description</h2>
+                      <p>{{ product?.description }}</p>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="profile">
+                      <h2>Reviews</h2>
+                      <div class="submit-review">
+                        <p>
+                          <label for="profile">Name</label>
+                          <input name="name" type="text" />
+                        </p>
+                        <p>
+                          <label for="profile">Email</label>
+                          <input name="email" type="email" />
+                        </p>
+                        <div class="rating-chooser">
+                          <p>Your rating</p>
+
+                          <div class="rating-wrap-post">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                          </div>
+                        </div>
+                        <p>
+                          <label for="profile">Your review</label>
+                          <textarea
+                            name="review"
+                            id=""
+                            cols="30"
+                            rows="10"
+                          ></textarea>
+                        </p>
+                        <p><input type="submit" value="Submit" /></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="related-products-wrapper">
+            <h2 class="related-products-title">Related Events</h2>
+            <div class="related-products-carousel">
+              <app-latest-products
+                (ShowDetailsClicked)="onShowDetailsClicked($event)"
+                [count]="slideConfigRelatedProducts"
+              ></app-latest-products>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

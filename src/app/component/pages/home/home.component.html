@@ -1,0 +1,320 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="slider-area">
+      <div class="block-slider block-slider4">
+        <div class="container">
+          <div class="row">
+            <!-- Slider carousel-item-->
+            <ngx-slick-carousel
+              class="carousel"
+              #slickModal="slick-carousel"
+              [config]="slideConfig"
+            >
+              @for (slide of slides; track slide.img) {
+                <div ngxSlickItem class="slide">
+                  <div class="carousel-item">
+                    <img [src]="slide.img" alt="Slide"/>
+                    <div class="caption-group1">
+                      <h2 class="caption title">
+                        {{ slide.title }}
+                        <span class="primary"> {{ slide.redtext }}</span>
+                      </h2>
+                      <h4 class="caption subtitle">{{ slide.subtitle }}</h4>
+                      <a class="caption button-radius" routerLink="/products"><span class="icon"></span>Find tickets now</a>
+                    </div>
+                  </div>
+                </div>
+
+              }
+            </ngx-slick-carousel>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End slider area -->
+
+    <div class="promo-area">
+      <div class="zigzag-bottom"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-6">
+            <div class="single-promo promo1">
+              <i class="fa fa-refresh"></i>
+              <p>30 Days return</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="single-promo promo2">
+              <i class="fa fa-truck"></i>
+              <p>Fast shipping</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="single-promo promo3">
+              <i class="fa fa-lock"></i>
+              <p>Secure payments</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="single-promo promo4">
+              <i class="fa fa-gift"></i>
+              <p>Exclusive benefits</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End promo area -->
+
+    <div class="maincontent-area">
+      <div class="zigzag-bottom"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="latest-product">
+              <h2 class="section-title">Latest Events</h2>
+              <app-latest-products
+                [count]="slideConfiglatestProducts"
+              ></app-latest-products>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End main content area -->
+
+    <div class="brands-area">
+      <div class="zigzag-bottom"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="brand-wrapper">
+              <ngx-slick-carousel
+                class="carousel"
+                #slickModal="slick-carousel"
+                [config]="slideConfigLogos"
+              >@for (slide of slidesLogos; track slide.img) {
+                <div class="product-f-image">
+                  <div ngxSlickItem class="slide">
+                    <img [src]="slide.img" alt="Slide" class="img-fluid"/>
+                  </div>
+                </div>
+              }
+              </ngx-slick-carousel>
+              <div class="brand-list"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End brands area -->
+
+    <div class="product-widget-area">
+      <div class="zigzag-bottom"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="single-product-widget">
+              <h2 class="product-wid-title">Top Concerts</h2>
+              <a routerLink="products" class="wid-view-more">View All</a>
+              <div class="single-wid-product">
+                <a routerLink="/product"
+                ><img
+                  src="../../../../assets/img/product-thumb-1.png"
+                  alt=""
+                  class="product-thumb"
+                /></a>
+                <h2><a routerLink="/product">Louis Tomlinson</a></h2>
+                <div class="product-wid-rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+                <div class="product-wid-price">
+                  <ins>S/.455.60</ins>
+                  <del>S/.524.00</del>
+                </div>
+              </div>
+              <div class="single-wid-product">
+                <a routerLink="/product"
+                ><img
+                  src="../../../../assets/img/product-thumb-2.png"
+                  alt=""
+                  class="product-thumb"
+                /></a>
+                <h2><a routerLink="/product">Mother Mother</a></h2>
+                <div class="product-wid-rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+                <div class="product-wid-price">
+                  <ins>S/.259.15</ins>
+                  <del>S/.298.00</del>
+                </div>
+              </div>
+              <div class="single-wid-product">
+                <a routerLink="/product"
+                ><img
+                  src="../../../../assets/img/product-thumb-3.png"
+                  alt=""
+                  class="product-thumb"
+                /></a>
+                <h2><a routerLink="/product">Anitta</a></h2>
+                <div class="product-wid-rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+                <div class="product-wid-price">
+                  <ins>S/.275.00</ins>
+                  <del>S/.319.00</del>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="single-product-widget">
+              <h2 class="product-wid-title">Top Clubs</h2>
+              <a routerLink="products" class="wid-view-more">View All</a>
+              <div class="single-wid-product">
+                <a routerLink="/product"
+                ><img
+                  src="../../../../assets/img/product-thumb-4.png"
+                  alt=""
+                  class="product-thumb"
+                /></a>
+                <h2><a routerLink="/product">Aria Club</a></h2>
+                <div class="product-wid-rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+                <div class="product-wid-price">
+                  <ins>S/.40.00</ins>
+                  <del>S/.75.00</del>
+                </div>
+              </div>
+              <div class="single-wid-product">
+                <a routerLink="/product"
+                ><img
+                  src="../../../../assets/img/product-thumb-5.png"
+                  alt=""
+                  class="product-thumb"
+                /></a>
+                <h2><a routerLink="/product">Faena</a></h2>
+                <div class="product-wid-rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+                <div class="product-wid-price">
+                  <ins>S/.70.00</ins>
+                  <del>S/.105.00</del>
+                </div>
+              </div>
+              <div class="single-wid-product">
+                <a routerLink="/product"
+                ><img
+                  src="../../../../assets/img/product-thumb-6.png"
+                  alt=""
+                  class="product-thumb"
+                /></a>
+                <h2><a routerLink="/product">Titanium</a></h2>
+                <div class="product-wid-rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+                <div class="product-wid-price">
+                  <ins>S/.60.00</ins>
+                  <del>S/.80.00</del>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="single-product-widget">
+              <h2 class="product-wid-title">Top Events</h2>
+              <a routerLink="products" class="wid-view-more">View All</a>
+              <div class="single-wid-product">
+                <a routerLink="/product"
+                ><img
+                  src="../../../../assets/img/product-thumb-7.png"
+                  alt=""
+                  class="product-thumb"
+                /></a>
+                <h2><a routerLink="/product">Sadistic Intent</a></h2>
+                <div class="product-wid-rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+                <div class="product-wid-price">
+                  <ins>S/.168.00</ins>
+                  <del>S/.232.00</del>
+                </div>
+              </div>
+              <div class="single-wid-product">
+                <a routerLink="/product"
+                ><img
+                  src="../../../../assets/img/product-thumb-8.png"
+                  alt=""
+                  class="product-thumb"
+                /></a>
+                <h2><a routerLink="/product">Daniela Darcourt Renacer</a></h2>
+                <div class="product-wid-rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+                <div class="product-wid-price">
+                  <ins>S/.319.00</ins>
+                  <del>S/.350.00</del>
+                </div>
+              </div>
+              <div class="single-wid-product">
+                <a routerLink="/product"
+                ><img
+                  src="../../../../assets/img/product-thumb-9.png"
+                  alt=""
+                  class="product-thumb"
+                /></a>
+                <h2><a routerLink="/product">Asagraum</a></h2>
+                <div class="product-wid-rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+                <div class="product-wid-price">
+                  <ins>S/.126.00</ins>
+                  <del>S/.232.00</del>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- End product widget area -->
+  </div>
+</div>

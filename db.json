@@ -1,0 +1,124 @@
+{
+    "products": [
+    {
+        "id": 1,
+        "title": "Ferxxocalipsis",
+        "detail": "¡FERXXO LLEGA A PERÚ CON SU GIRA - FERXXO LLEGA A PERÚ CON SU GIRA! Feid Ferxxo, reconocido por su talento y versatilidad en el género urbano, ha conquistado a audiencias de todo el mundo con su estilo único y sus letras contagiosas. Con hits como Porfa, Fumeteo y GANGA, el artista colombiano ha consolidado su posición como uno de los referentes más destacados de la música latina contemporánea.",
+        "location": "Jockey Club del Perú",
+        "Price": 480.00,
+        "color": "",
+        "discount": 552.00,
+        "photo": "../../assets/img/events/event1.png"
+      },
+      {
+        "id": 2,
+        "title": "Festival Internacional del Vinilo Vol.6",
+        "detail": "FIV Vol. VI Llega la sexta edición del Festival Internacional del Vinilo en Lima (FIV). Serán 2 tiendas extranjeras, 1 de Argentina y 1 de España. Tiendas de provincia y más de 40 de Lima (zona Quilca, sellos independientes y mercado de pulgas). Música en vivo con nuestro primer artista internacional, Dante Spinetta (ex Illya Kuryaki and the Valderramas), La Mente, 6 Voltios, La Liga del Sueño, Frágil y más. Audiolima Experience: Djs en vivo, transmisión en vivo de Radio Oxígeno, food trucks, barras de bebida, ropa, libros, funkos, juegos inflables activaciones de marca y mucho más. Información adicional Somos pet friendly :)",
+        "location": "Parque de la Exposición",
+        "Price": 97.50,
+        "color": "",
+        "discount": 130.00,
+        "photo": "../../assets/img/events/event2.png"
+      },
+      {
+        "id": 3,
+        "title": "Miel San Marcos - Generaciones 24",
+        "detail":"Miel San Marcos es una de las bandas cristianas más trascendentes de la música latina contemporánea. Con Doce producciones discográficas, han recorrido el mundo compartiendo sus múltiples éxitos originales como: «No Hay Lugar Más Alto», «Danzo En El Río», «Levántate Señor», entre otros. En el 2012, el grupo guatemalteco hizo historia con su grabación en vivo titulada «Proezas», la cual reunió a miles de asistentes en el Anaheim Convention Center Arena. Durante el 2014, Miel San Marcos hizo historia nuevamente siendo una de las pocas agrupaciones en reunir a más de 17 mil personas en La Arena Ciudad de México para la grabación Como en el Cielo.",
+        "location": "Jockey Club del Perú",
+        "Price": 201.00,
+        "color": "Red",
+        "discount": 232.00,
+        "photo": "../../assets/img/events/event3.png"
+      },
+      {
+        "id": 4,
+        "title": "Orbital Club Pres. Ben Sterling",
+        "detail": "El reconocido DJ, cantante, compositor y músico Estadounidense, Ben Sterling, aterriza en Lima para una noche electrónica inolvidable. Gracias a Vastion, los aficionados peruanos tendrán la oportunidad de disfrutar de su talento el próximo 23 de mayo en Orbital, ubicado en Lince.",
+        "location": "Orbital Club",
+        "Price": 56.00,
+        "color": "Red",
+        "discount": 78.00,
+        "photo": "../../assets/img/events/event4.png"
+      },
+      {
+        "id":5,
+        "title": "Superclub Pres. Amelie Lens",
+        "detail": "La espera ha terminado. ¡Amelie Lens, la renombrada DJ y productora belga, llega a Lima para una experiencia electrónica única! Junto a ella, el talentoso Víctor Ruiz se une a la fiesta para ofrecer un espectáculo inolvidable. Presentado por Super Club, este evento promete ser el punto culminante del verano.",
+        "location": "Superclub",
+        "Price": 90.00,
+        "color": "",
+        "discount": 112.00,
+        "photo": "../../assets/img/events/event5.png"
+      },
+      {
+        "id": 6,
+        "title": "Cosquín Rock Perú",
+        "detail":"Cosquín Rock, que desde su creación en el año 2001 ha servido como un pilar fundamental para la industria musical, no solo ofrece una plataforma para bandas emergentes y establecidas, sino que también ha sido un motor crucial para el desarrollo cultural y musical. Durante sus más de dos décadas de historia, el festival ha logrado congregar a cientos de miles de personas, incluyendo un récord de asistencia en Argentina en 2023, donde más de 200,000 asistentes disfrutaron de un espectáculo sin precedentes.",
+        "location": "Estadio Nacional",
+        "Price": 329.00,
+        "color": "",
+        "discount": 380.00,
+        "photo": "../../assets/img/events/event6.png"
+      },
+      {
+        "id": 7,
+        "title": "Morat: Los estadios. Antes de que amanezca",
+        "detail":"Sport trainer",
+        "location": "Estadio Nacional",
+        "Price": 390.00,
+        "color": "Red",
+        "discount": 459.00,
+        "photo": "../../assets/img/events/event7.png"
+      },
+      {
+        "id": 8,
+        "title": "Festival Andino Latinoamericano IV Edición",
+        "detail": "¡La espera terminó! Vuelve el FESTIVAL ANDINO LATINOAMERICANO IV EDICIÓN al Anfiteatro del Parque de la Exposición,  este sábado 25 de mayo, a partir de las 2:00 p.m. Únete a este gran festival para celebrar lo mejor de nuestra música andina. Juntos en un mismo escenario: Alborada, Amaranta, Antología, Raíces D’ Jauja, William Luna, Mac Salvador, Max Castro, Mauricio Mesones ¡Prepárate para vivir un festival lleno de emoción y peruanidad!",
+        "location": "Parque de la Exposición",
+        "Price": 236.00,
+        "color": "Red",
+        "discount": 275.00,
+        "photo": "../../assets/img/events/event8.png"
+      },
+      {
+        "id": 9,
+        "title": "Alvaro Rod en Ayacucho",
+        "detail": "",
+        "location": "Ayacucho",
+        "Price": 34.00,
+        "color": "",
+        "discount": 56.00,
+        "photo": "../../assets/img/events/event9.png"
+      },
+      {
+        "id": 10,
+        "title": "Marcos Llunas - Sinfonia a Mamá",
+        "detail":"Marcos Llunas Sinfonía para mamá, Marcos Llunas presentará por única vez un concierto en homenaje a mamá, este 25 de mayo en el teatro municipal de lima, donde estará acompañado de sus músicos y un marco sinfónico, interpretando sus mejores éxitos de siempre y un lindo homenaje a mamá con las canciones de su padre Dyango.",
+        "location": "Teatro Municipal de Lima",
+        "Price": 236.00,
+        "color": "",
+        "discount": 257.00,
+        "photo": "../../assets/img/events/event10.png"
+      },
+      {
+        "id": 11,
+        "title": "Un bolero Un vals, Eva Ayllón",
+        "detail":"Eva Ayllón vuelve con su espectáculo Un Bolero Un Vals acompañada de su marco musical donde – como adelanta el nombre del show - mezcla el vals y el bolero. Mejor dicho, un género le responde al otro.",
+        "location": "Teatro Municipal de Lima",
+        "Price": 120.00,
+        "color": "Red",
+        "discount": 140.00,
+        "photo": "../../assets/img/events/event11.png"
+      },
+      {
+        "id": 12,
+        "title": "Temporada de Abono 2024",
+        "detail": "",
+        "location": "Teatro Municipal de Lima",
+        "Price": 180.00,
+        "color": "Red",
+        "discount": 220.00,
+        "photo": "../../assets/img/events/event12.png"
+      }
+    ]
+}

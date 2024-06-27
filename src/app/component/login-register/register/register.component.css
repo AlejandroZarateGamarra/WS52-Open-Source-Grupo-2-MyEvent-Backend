@@ -1,0 +1,70 @@
+/* Importar la fuente Nunito Sans desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap');
+.container {
+  display: flex;
+  justify-content: space-around; /* Espacio entre secciones izquierda y derecha */
+  align-items: center;
+}
+
+.form-box {
+  border: 1.5px solid black; /* Borde de la caja del formulario */
+  padding: 20px; /* Espaciado interno de la caja del formulario */
+  width: 750px; /* Ancho de la caja del formulario */
+  margin-top: 20px;
+  border-radius: 10px; /* le da bordes circulares a la caja de registro*/
+  background-color: white;
+}
+
+
+.form-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Distribuye en columnas responsivas */
+  gap: 10px; /* Espacio entre elementos */
+  padding: 20px;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.form-container {
+  width: 100%;
+}
+
+.form-container mat-form-field {
+  width: 100%;
+}
+
+
+.example-form-field {
+  width: 100%;
+  height: 80px; /* Ajusta la altura según tu preferencia */
+  font-size: 14px; /* Ajusta el tamaño de la fuente según tu preferencia */
+
+}
+
+.button-container{
+  padding-left: 200px;
+}
+
+.button-container button {
+  width: 330px;
+  height: 45px;
+  background-color: rgba(204, 21, 21, 0.99);
+  color: white;
+  border: none;
+}
+.button-container button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+h2{
+  margin-top: 20px;
+  text-align: center;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 700; /* Establece el peso de la fuente a semibold (700) */
+  color: #333;
+  font-size: 30px;
+  padding-bottom: 20px;
+}
+
+

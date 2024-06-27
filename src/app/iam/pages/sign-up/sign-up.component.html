@@ -1,0 +1,64 @@
+<body>
+<div class="container">
+  <div class="form-box">
+    <h2>Registrate</h2>
+    <div class="form-wrapper">
+      <div class="form-container">
+        <form [formGroup]="form" (submit)="onSubmit()">
+          <div class="form-row">
+            <div class="form-field">
+              <mat-label for="nombreInput">Name:</mat-label>
+              <mat-form-field>
+                <input matInput placeholder="Michael..." id="name" name="name" required formControlName="name">
+                <mat-error *ngIf="isInvalidControl(form, 'name')">{{errorMessagesForControl(form, 'name')}}</mat-error>
+              </mat-form-field>
+            </div>
+            <div class="form-field">
+              <mat-label for="apellidoInput">Surname:</mat-label>
+              <mat-form-field>
+                <input matInput placeholder="Camelino Dueñas" id="surname" name="surname" required formControlName="surname">
+                <mat-error *ngIf="isInvalidControl(form, 'surname')">{{errorMessagesForControl(form, 'surname')}}</mat-error>
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-field">
+              <mat-label for="correoInput">Email:</mat-label>
+              <mat-form-field>
+                <input matInput placeholder="example@gmail.com" id="correo" name="correo" required formControlName="correo">
+                <mat-error *ngIf="isInvalidControl(form, 'correo')">{{errorMessagesForControl(form, 'correo')}}</mat-error>
+              </mat-form-field>
+            </div>
+            <div class="form-field">
+              <mat-label for="passwordInput">Password:</mat-label>
+              <mat-form-field>
+                <input matInput placeholder="1234567890" id="password" name="password" required formControlName="password">
+                <mat-error *ngIf="isInvalidControl(form, 'password')">{{errorMessagesForControl(form, 'password')}}</mat-error>
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-field">
+              <mat-label for="telefonoInput">Phone:</mat-label>
+              <mat-form-field>
+                <input matInput placeholder="999777555" id="phone" name="phone" required formControlName="phone">
+                <mat-error *ngIf="isInvalidControl(form, 'phone')">{{errorMessagesForControl(form, 'phone')}}</mat-error>
+              </mat-form-field>
+            </div>
+            <div class="form-field">
+              <mat-label for="dniInput">Dni:</mat-label>
+              <mat-form-field>
+                <input matInput placeholder="71234567" id="dni" name="dni" required formControlName="dni">
+                <mat-error *ngIf="isInvalidControl(form, 'dni')">{{errorMessagesForControl(form, 'dni')}}</mat-error>
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="form-row">
+          </div>
+          <button mat-raised-button style="margin-left: 175px;width: 300px; height: 45px; margin-top: 5px; margin-bottom: 10px; background-color: rgba(204, 21, 21, 0.99); color: white;">Sign Up</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+</body>

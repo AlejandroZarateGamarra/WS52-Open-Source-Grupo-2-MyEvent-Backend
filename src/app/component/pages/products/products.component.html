@@ -1,0 +1,84 @@
+<div class="product-big-title-area">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="product-bit-title text-center">
+          <h2>NEW EVENTS</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="single-product-area">
+  <div class="zigzag-bottom"></div>
+  <div class="container">
+    <div class="row">
+
+      <div *ngFor="let event of arrProduct, let i = index" class="col-md-3 col-sm-6">
+        <div class="single-shop-product">
+          <mat-card class="example-card">
+            <div class="card-header">
+              <mat-card-header>
+                <mat-card-title routerLink="/event/{{ event.id }}" class="card-title"><span>{{ event.name }}</span></mat-card-title>
+              </mat-card-header>
+            </div>
+            <!-- Aquí puedes poner una imagen predeterminada o agregar una propiedad de imagen a tu objeto de evento -->
+            <img mat-card-image src="assets/img/events/event{{i + 1}}.png" alt="Photo of an event">
+            <mat-card-content>
+              <div class="product-carousel-price">
+                <!-- Aquí puedes poner la ubicación del evento o cualquier otra propiedad que desees mostrar -->
+                <mat-card-subtitle class="detail">{{ event.category }}</mat-card-subtitle>
+                <!-- Aquí puedes poner el precio del evento o cualquier otra propiedad que desees mostrar -->
+                <ins>{{ event.priceTicket | currency:'S/.' }}</ins>
+              </div>
+            </mat-card-content>
+            <mat-card-actions>
+              <div class="product-option-shop">
+                <a
+                  class="add_to_cart_button"
+                  data-quantity="1"
+                  data-product_sku=""
+                  data-product_id="70"
+                  rel="nofollow"
+                  routerLink="/cart"
+                  (click)=addCartItem(event)
+                >Add to cart</a>
+                <!--
+                (click)=""addCartItem(product
+                -->
+              </div>
+            </mat-card-actions>
+          </mat-card>
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="col-md-12">
+          <div class="product-pagination text-center">
+            <nav>
+              <ul class="pagination">
+                <li>
+                  <a href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                  </a>
+                </li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li>
+                  <a href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

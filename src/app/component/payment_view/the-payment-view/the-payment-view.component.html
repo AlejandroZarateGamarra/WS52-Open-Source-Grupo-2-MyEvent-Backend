@@ -1,0 +1,60 @@
+<div class="product-big-title-area">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="product-bit-title text-center">
+          <h2>CONFIRMA TU COMPRA</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="container">
+  <div id="confirmationText">
+    <div id="detailSection">
+      <div class="paymentMethod">
+        <img src="assets/img/payment_resources/paypal.png" alt="img">
+      </div>
+      <div class="paymentDetails">
+        <div class="leftSection">
+          <div class="column">
+            <p>Medio de pago</p>
+            <img class="PaymenthLogoImage" src="assets/img/payment_resources/PayPallogo.png" alt="Imagen">
+            <p>Información de pago</p>
+            <div class="whiteBox">
+              <div *ngFor="let item of cart.items">
+                <p class="italic-text">{{item.product.name}} x{{item.quantity}}</p>
+                <p class="italic-text">Total para este evento: S/{{item.product.priceTicket * item.quantity}}</p>
+              </div>
+              <div>
+                <hr class="hr-bottom">
+                <p class="italic-text">Subtotal: S/{{cart.totalPrice}}</p>
+                <hr class="hr-bottom">
+                <p class="italic-text">Total: S/{{cart.totalPrice}}</p>
+              </div>
+            </div>
+            <label>
+              <input type="checkbox">
+              <span class="checkbox-text">Acepto haber leído los términos y condiciones y políticas de privacidad para hacer este pago</span>
+            </label>
+            <button class="payButton" (click)="generateBill()">Pagar</button>
+          </div>
+        </div>
+        <div class="rightSection">
+          <div class="infoSection">
+            <input type="text" [(ngModel)]="cardOwner" placeholder="Nombre del titular">
+            <input type="text" placeholder="Tipo de identificación">
+            <input type="text" placeholder="Número de identificación">
+            <input type="text" placeholder="Número de teléfono">
+            <input type="text" placeholder="Correo electrónico">
+            <input type="text" placeholder="Selecciona tu banco">
+            <input type="text" [(ngModel)]="cardNumber" placeholder="Numero de tarjeta" class="alternate-input">
+            <input type="password" [(ngModel)]="cardCvv" placeholder="cvc" class="hidden-input">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
