@@ -120,5 +120,378 @@
         "discount": 220.00,
         "photo": "../../assets/img/events/event12.png"
       }
-    ]
+    ],
+  "products": [
+    {
+      "id": "1",
+      "title": "Ferxxocalipsis",
+      "detail": "¡FERXXO LLEGA A PERÚ CON SU GIRA - FERXXO LLEGA A PERÚ CON SU GIRA! Feid Ferxxo, reconocido por su talento y versatilidad en el género urbano, ha conquistado a audiencias de todo el mundo con su estilo único y sus letras contagiosas. Con hits como Porfa, Fumeteo y GANGA, el artista colombiano ha consolidado su posición como uno de los referentes más destacados de la música latina contemporánea.",
+      "Price": 480,
+      "color": "",
+      "discount": 552,
+      "photo": "../../assets/img/events/event1.png"
+    },
+    {
+      "id": "2",
+      "title": "Festival Internacional del Vinilo Vol.6",
+      "detail": "FIV Vol. VI Llega la sexta edición del Festival Internacional del Vinilo en Lima (FIV). Serán 2 tiendas extranjeras, 1 de Argentina y 1 de España. Tiendas de provincia y más de 40 de Lima (zona Quilca, sellos independientes y mercado de pulgas). Música en vivo con nuestro primer artista internacional, Dante Spinetta (ex Illya Kuryaki and the Valderramas), La Mente, 6 Voltios, La Liga del Sueño, Frágil y más. Audiolima Experience: Djs en vivo, transmisión en vivo de Radio Oxígeno, food trucks, barras de bebida, ropa, libros, funkos, juegos inflables activaciones de marca y mucho más. Información adicional Somos pet friendly :)",
+      "Price": 97.5,
+      "color": "",
+      "discount": 130,
+      "photo": "../../assets/img/events/event2.png"
+    },
+    {
+      "id": "3",
+      "title": "Miel San Marcos - Generaciones 24",
+      "detail": "Miel San Marcos es una de las bandas cristianas más trascendentes de la música latina contemporánea. Con Doce producciones discográficas, han recorrido el mundo compartiendo sus múltiples éxitos originales como: «No Hay Lugar Más Alto», «Danzo En El Río», «Levántate Señor», entre otros. En el 2012, el grupo guatemalteco hizo historia con su grabación en vivo titulada «Proezas», la cual reunió a miles de asistentes en el Anaheim Convention Center Arena. Durante el 2014, Miel San Marcos hizo historia nuevamente siendo una de las pocas agrupaciones en reunir a más de 17 mil personas en La Arena Ciudad de México para la grabación Como en el Cielo.",
+      "Price": 201,
+      "color": "Red",
+      "discount": 232,
+      "photo": "../../assets/img/events/event3.png"
+    },
+    {
+      "id": "4",
+      "title": "Orbital Club Pres. Ben Sterling",
+      "detail": "El reconocido DJ, cantante, compositor y músico Estadounidense, Ben Sterling, aterriza en Lima para una noche electrónica inolvidable. Gracias a Vastion, los aficionados peruanos tendrán la oportunidad de disfrutar de su talento el próximo 23 de mayo en Orbital, ubicado en Lince.",
+      "Price": 56,
+      "color": "Red",
+      "discount": 78,
+      "photo": "../../assets/img/events/event4.png"
+    },
+    {
+      "id": "5",
+      "title": "Superclub Pres. Amelie Lens",
+      "detail": "La espera ha terminado. ¡Amelie Lens, la renombrada DJ y productora belga, llega a Lima para una experiencia electrónica única! Junto a ella, el talentoso Víctor Ruiz se une a la fiesta para ofrecer un espectáculo inolvidable. Presentado por Super Club, este evento promete ser el punto culminante del verano.",
+      "Price": 90,
+      "color": "",
+      "discount": 112,
+      "photo": "../../assets/img/events/event5.png"
+    },
+    {
+      "id": "6",
+      "title": "Cosquín Rock Perú",
+      "detail": "Cosquín Rock, que desde su creación en el año 2001 ha servido como un pilar fundamental para la industria musical, no solo ofrece una plataforma para bandas emergentes y establecidas, sino que también ha sido un motor crucial para el desarrollo cultural y musical. Durante sus más de dos décadas de historia, el festival ha logrado congregar a cientos de miles de personas, incluyendo un récord de asistencia en Argentina en 2023, donde más de 200,000 asistentes disfrutaron de un espectáculo sin precedentes.",
+      "Price": 329,
+      "color": "",
+      "discount": 380,
+      "photo": "../../assets/img/events/event6.png"
+    },
+    {
+      "id": "7",
+      "title": "Morat: Los estadios. Antes de que amanezca",
+      "detail": "Sport trainer",
+      "Price": 390,
+      "color": "Red",
+      "discount": 459,
+      "photo": "../../assets/img/events/event7.png"
+    },
+    {
+      "id": "8",
+      "title": "Festival Andino Latinoamericano IV Edición",
+      "detail": "¡La espera terminó! Vuelve el FESTIVAL ANDINO LATINOAMERICANO IV EDICIÓN al Anfiteatro del Parque de la Exposición,  este sábado 25 de mayo, a partir de las 2:00 p.m. Únete a este gran festival para celebrar lo mejor de nuestra música andina. Juntos en un mismo escenario: Alborada, Amaranta, Antología, Raíces D’ Jauja, William Luna, Mac Salvador, Max Castro, Mauricio Mesones ¡Prepárate para vivir un festival lleno de emoción y peruanidad!",
+      "Price": 236,
+      "color": "Red",
+      "discount": 275,
+      "photo": "../../assets/img/events/event8.png"
+    },
+    {
+      "id": "9",
+      "title": "Alvaro Rod en Ayacucho",
+      "detail": "",
+      "Price": 34,
+      "color": "",
+      "discount": 56,
+      "photo": "../../assets/img/events/event9.png"
+    },
+    {
+      "id": "10",
+      "title": "Marcos Llunas - Sinfonia a Mamá",
+      "detail": "Marcos Llunas Sinfonía para mamá, Marcos Llunas presentará por única vez un concierto en homenaje a mamá, este 25 de mayo en el teatro municipal de lima, donde estará acompañado de sus músicos y un marco sinfónico, interpretando sus mejores éxitos de siempre y un lindo homenaje a mamá con las canciones de su padre Dyango.",
+      "Price": 236,
+      "color": "",
+      "discount": 257,
+      "photo": "../../assets/img/events/event10.png"
+    },
+    {
+      "id": "11",
+      "title": "Un bolero Un vals, Eva Ayllón",
+      "detail": "Eva Ayllón vuelve con su espectáculo Un Bolero Un Vals acompañada de su marco musical donde – como adelanta el nombre del show - mezcla el vals y el bolero. Mejor dicho, un género le responde al otro.",
+      "Price": 120,
+      "color": "Red",
+      "discount": 140,
+      "photo": "../../assets/img/events/event11.png"
+    },
+    {
+      "id": "12",
+      "title": "Temporada de Abono 2024",
+      "detail": "",
+      "Price": 180,
+      "color": "Red",
+      "discount": 220,
+      "photo": "../../assets/img/events/event12.png"
+    }
+  ],
+  "users": [
+    {
+      "id": "30m60b9ec",
+      "nombre": "María",
+      "apellidos": "González Pérez",
+      "correo_electronico": "maria@gmail.com",
+      "telefono": "456456",
+      "dni": "456456",
+      "tipo_de_cuenta": "Vendedor",
+      "contrasena": "maria",
+      "premium": true,
+      "daycreate": "02/01/2024",
+      "nivel": 1
+    },
+    {
+      "id": "30m60b9ed",
+      "nombre": "Carlos",
+      "apellidos": "López Martínez",
+      "correo_electronico": "carlos@gmail.com",
+      "telefono": "789789",
+      "dni": "789789",
+      "tipo_de_cuenta": "Comprador",
+      "contrasena": "carlos",
+      "premium": true,
+      "daycreate": "15/03/2024",
+      "nivel": 2
+    },
+    {
+      "id": "30m60b9ee",
+      "nombre": "Ana",
+      "apellidos": "Martín Sánchez",
+      "correo_electronico": "ana@gmail.com",
+      "telefono": "101010",
+      "dni": "101010",
+      "tipo_de_cuenta": "Vendedor",
+      "contrasena": "ana",
+      "premium": true,
+      "daycreate": "28/04/2024",
+      "nivel": 0
+    },
+    {
+      "id": "30m60b9ef",
+      "nombre": "Juan",
+      "apellidos": "García Rodríguez",
+      "correo_electronico": "juan@gmail.com",
+      "telefono": "121212",
+      "dni": "121212",
+      "tipo_de_cuenta": "Comprador",
+      "contrasena": "juan",
+      "premium": false,
+      "daycreate": "10/05/2024",
+      "nivel": 1
+    },
+    {
+      "id": "30m60b9eg",
+      "nombre": "Sara",
+      "apellidos": "Pérez López",
+      "correo_electronico": "sara@gmail.com",
+      "telefono": "141414",
+      "dni": "141414",
+      "tipo_de_cuenta": "Comprador",
+      "contrasena": "sara",
+      "premium": true,
+      "daycreate": "22/06/2024",
+      "nivel": 2
+    },
+    {
+      "id": "30m60b9eh",
+      "nombre": "Pablo",
+      "apellidos": "Hernández García",
+      "correo_electronico": "pablo@gmail.com",
+      "telefono": "161616",
+      "dni": "161616",
+      "tipo_de_cuenta": "Vendedor",
+      "contrasena": "pablo",
+      "premium": false,
+      "daycreate": "05/07/2024",
+      "nivel": 0
+    },
+    {
+      "id": "30m60b9ei",
+      "nombre": "Elena",
+      "apellidos": "Ruiz Martínez",
+      "correo_electronico": "elena@gmail.com",
+      "telefono": "181818",
+      "dni": "181818",
+      "tipo_de_cuenta": "Comprador",
+      "contrasena": "elena",
+      "premium": true,
+      "daycreate": "18/08/2024",
+      "nivel": 1
+    },
+    {
+      "id": "30m60b9ej",
+      "nombre": "Miguel",
+      "apellidos": "Díaz Rodríguez",
+      "correo_electronico": "miguel@gmail.com",
+      "telefono": "202020",
+      "dni": "202020",
+      "tipo_de_cuenta": "Vendedor",
+      "contrasena": "miguel",
+      "premium": false,
+      "daycreate": "30/09/2024",
+      "nivel": 2
+    },
+    {
+      "id": "5aqud53k7",
+      "nombre": "Michael",
+      "apellidos": "Carmelino",
+      "correo_electronico": "aaaa@gmail.com",
+      "telefono": "123",
+      "dni": "123",
+      "tipo_de_cuenta": "Comprador",
+      "contrasena": "1234567",
+      "premium": false,
+      "daycreate": "23/5/2024",
+      "nivel": 0
+    },
+    {
+      "id": "wleivo8xq",
+      "nombre": "Andres",
+      "apellidos": "Portuano",
+      "correo_electronico": "a",
+      "telefono": "999888777",
+      "dni": "73124583",
+      "tipo_de_cuenta": "Organizador",
+      "contrasena": "a",
+      "premium": false,
+      "daycreate": "23/5/2024",
+      "nivel": 0
+    },
+    {
+      "id": "kgara32x5",
+      "nombre": "pier",
+      "apellidos": "m",
+      "correo_electronico": "piero@hotmail.com",
+      "telefono": "3",
+      "dni": "76808782",
+      "tipo_de_cuenta": "Comprador",
+      "contrasena": "1234567",
+      "premium": false,
+      "daycreate": "27/5/2024",
+      "nivel": 0
+    },
+    {
+      "id": "vfs6cgyqs",
+      "nombre": "Alessandro",
+      "apellidos": "Bernardo Eusebio",
+      "correo_electronico": "abc@hotmail.com",
+      "telefono": "999888777",
+      "dni": "72638241",
+      "tipo_de_cuenta": "Comprador",
+      "contrasena": "1234567890",
+      "premium": false,
+      "daycreate": "30/5/2024",
+      "nivel": 0
+    }
+  ],
+  "credenciales": [
+    {
+      "tipo_tarjeta": "Visa",
+      "nombre": "Juan Perez",
+      "tarjeta": "4111 1111 1111 1111",
+      "cvv": "123",
+      "fecha_expiracion": "12/25"
+    },
+    {
+      "tipo_tarjeta": "Mastercard",
+      "nombre": "Maria Lopez",
+      "tarjeta": "5500 0000 0000 0004",
+      "cvv": "456",
+      "fecha_expiracion": "06/26"
+    },
+    {
+      "tipo_tarjeta": "Visa",
+      "nombre": "Carlos Rodriguez",
+      "tarjeta": "4222 2222 2222 2220",
+      "cvv": "789",
+      "fecha_expiracion": "03/27"
+    },
+    {
+      "tipo_tarjeta": "Mastercard",
+      "nombre": "Ana Martinez",
+      "tarjeta": "5105 1051 0510 5100",
+      "cvv": "012",
+      "fecha_expiracion": "11/28"
+    },
+    {
+      "tipo_tarjeta": "Visa",
+      "nombre": "Sara Gonzalez",
+      "tarjeta": "4012 8888 8888 1881",
+      "cvv": "345",
+      "fecha_expiracion": "05/29"
+    },
+    {
+      "tipo_tarjeta": "Mastercard",
+      "nombre": "Pablo Fernandez",
+      "tarjeta": "5404 0000 0000 0001",
+      "cvv": "678",
+      "fecha_expiracion": "09/30"
+    },
+    {
+      "tipo_tarjeta": "Visa",
+      "nombre": "Elena Ruiz",
+      "tarjeta": "4111 1111 1111 3333",
+      "cvv": "901",
+      "fecha_expiracion": "02/31"
+    },
+    {
+      "tipo_tarjeta": "Mastercard",
+      "nombre": "Miguel Diaz",
+      "tarjeta": "5300 0000 0000 0002",
+      "cvv": "234",
+      "fecha_expiracion": "07/32"
+    },
+    {
+      "tipo_tarjeta": "Visa",
+      "nombre": "Michael Carmelino",
+      "tarjeta": "4999 9999 9999 1111",
+      "cvv": "567",
+      "fecha_expiracion": "04/33"
+    },
+    {
+      "tipo_tarjeta": "Mastercard",
+      "nombre": "Andres Portuano",
+      "tarjeta": "5200 0000 0000 0009",
+      "cvv": "890",
+      "fecha_expiracion": "10/34"
+    },
+    {
+      "tipo_tarjeta": "Visa",
+      "nombre": "Pier M",
+      "tarjeta": "4000 0000 0000 1212",
+      "cvv": "345",
+      "fecha_expiracion": "11/35"
+    }
+  ],
+  "subscriptions": [
+    {
+      "id": "2y7aqz0kuqc",
+      "userId": "30m60b9ec",
+      "subscriptionDate": "2024-05-30T23:22:28.529Z",
+      "isActive": false
+    },
+    {
+      "id": "e9zun2so9bd",
+      "userId": "30m60b9ef",
+      "subscriptionDate": "2024-05-31T02:03:35.704Z",
+      "isActive": false
+    },
+    {
+      "id": "5m570iv0jq2",
+      "userId": "30m60b9ec",
+      "subscriptionDate": "2024-05-31T02:14:41.094Z",
+      "isActive": false
+    },
+    {
+      "id": "bvh50e4h604",
+      "userId": "30m60b9ec",
+      "subscriptionDate": "2024-05-31T03:10:40.545Z",
+      "isActive": true
+    }
+  ]
 }
