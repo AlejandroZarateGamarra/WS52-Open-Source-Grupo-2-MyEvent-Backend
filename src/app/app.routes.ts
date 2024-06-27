@@ -10,11 +10,13 @@ import {ThePaymentViewComponent} from "./component/payment_view/the-payment-view
 import {MapsComponent} from "./component/external/maps/maps.component";
 import {LoginComponent} from "./component/login-register/login/login.component";
 import {RegisterComponent} from "./component/login-register/register/register.component";
+import {SignUpComponent} from "./iam/pages/sign-up/sign-up.component";
+import {SignInComponent} from "./iam/pages/sign-in/sign-in.component";
 import {AuthGuard} from "@angular/fire/auth-guard";
 
 
 export const routes: Routes = [
-  { path: '', component: LoginComponent },
+  { path: '', component: SignInComponent },
   { path: 'home', component: HomeComponent },
   { path: 'products', component: ProductsComponent},
   { path: 'product/:id', component: ProductdetailsComponent },
@@ -25,6 +27,7 @@ export const routes: Routes = [
   { path: 'payment', component: ThePaymentViewComponent },
   { path: 'maps', component: MapsComponent },
   { path: 'login', component: LoginComponent },
-  { path: 'register', component: RegisterComponent}
-
+  { path: 'register', component: RegisterComponent},
+  { path: 'sign-up', component: SignUpComponent},
+  { path: 'sign-in', component: SignInComponent},
 ];
