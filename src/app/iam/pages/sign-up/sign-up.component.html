@@ -16,7 +16,7 @@
             <div class="form-field">
               <mat-label for="apellidoInput">Surname:</mat-label>
               <mat-form-field>
-                <input matInput placeholder="Camelino Dueñas" id="surname" name="surname" required formControlName="surname">
+                <input matInput placeholder="Camelino DueÃ±as" id="surname" name="surname" required formControlName="surname">
                 <mat-error *ngIf="isInvalidControl(form, 'surname')">{{errorMessagesForControl(form, 'surname')}}</mat-error>
               </mat-form-field>
             </div>
@@ -54,20 +54,6 @@
             </div>
           </div>
           <div class="form-row">
-            <div class="form-field">
-              <mat-label for="tipoDeCuentaInput">Type Account:</mat-label>
-              <mat-form-field>
-                <input matInput placeholder="Organizador" id="tipoDeCuenta" name="tipoDeCuenta" required formControlName="tipoDeCuenta">
-                <mat-error *ngIf="isInvalidControl(form, 'tipoDeCuenta')">{{errorMessagesForControl(form, 'tipoDeCuenta')}}</mat-error>
-              </mat-form-field>
-            </div>
-            <div class="form-field">
-              <mat-label for="premiumInput">Premium:</mat-label>
-              <mat-form-field>
-                <input matInput placeholder="Si" id="premium" name="premium" required formControlName="premium">
-                <mat-error *ngIf="isInvalidControl(form, 'premium')">{{errorMessagesForControl(form, 'premium')}}</mat-error>
-              </mat-form-field>
-            </div>
           </div>
           <button mat-raised-button style="margin-left: 175px;width: 300px; height: 45px; margin-top: 5px; margin-bottom: 10px; background-color: rgba(204, 21, 21, 0.99); color: white;">Sign Up</button>
         </form>

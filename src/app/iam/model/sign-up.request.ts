@@ -9,7 +9,7 @@ export class SignUpRequest {
   public tipoDeCuenta: string;
   public premium: string;
 
-  constructor(name: string, surname: string, correo: string, phone: string, dni: string, tipoDeCuenta: string, password: string, premium: string) {
+  constructor(name: string, surname: string, correo: string, password: string, phone: string, dni: string, tipoDeCuenta: string, premium: string) {
     this.name = name;
     this.surname = surname;
     this.correo = correo;
