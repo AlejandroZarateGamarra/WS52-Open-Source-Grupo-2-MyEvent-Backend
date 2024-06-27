@@ -15,10 +15,25 @@
 
 
   <div class="container m-5">
-    <form [formGroup]="formularioContacto" (ngSubmit)="enviarFormulario($event)">
+    <form action="https://api.web3forms.com/submit" method="POST" target="_blank">
+      <input type="hidden" name="access_key" value="e2c32ce6-a37f-4633-b433-f620757a8f90">
+      <div class="mb-3">
+        <label for="email" class="form-label">Full Name</label>
+        <input type="name"
+               name="name" required
+               class="form-control"
+               id="name"
+               placeholder="John Doe"
+               formControlName="name"
+               [ngClass]="{'is-invalid' : hasError('name', 'required') || hasError('name', 'name')}"
+        >
+        <span class="text-danger" *ngIf="hasError('name', 'required')">Full Name obligatorio</span>
+        <span class="text-danger" *ngIf="hasError('name', 'name')">Full Name inválido</span>
+      </div>
       <div class="mb-3">
         <label for="email" class="form-label">Email</label>
         <input type="email"
+               name="email" required
                class="form-control"
                id="email"
                placeholder="name@example.com"
@@ -32,6 +47,7 @@
         <label for="motivo" class="form-label">Motivo de contacto: </label>
         <textarea
           class="form-control"
+          name="message" required
           id="motivo"
           rows="3"
           formControlName="motivo"
@@ -40,7 +56,8 @@
         <span class="text-danger" *ngIf="hasError('motivo', 'required')">Motivo obligatorio</span>
         <span class="text-danger" *ngIf="hasError('motivo', 'minlength')">Requiere al menos 10 caracteres</span>
       </div>
-      <button type="submit" class="btn btn-primary">Enviar</button>
+      <button type="submit" class="btn btn-primary">Submit Form</button>
+
     </form>
 
 
